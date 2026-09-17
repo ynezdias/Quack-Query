@@ -9,11 +9,20 @@ jobs:
         with:
           python-version: '3.11'
           cache: pip
+      - run: pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r requirements.txt
       - run: pip check
       - run: python -m unittest discover -s tests -v
       - run: python -m compileall -q src app.py
-      - run: python -m src.ingest --dry-run
+      - run: python -m src.ingest --corpus synthetic
+      - run: python -m src.evaluate --split test --output eval/ci-results.json
+      - name: Check synthetic retrieval regression threshold
+        run: python -c "import json; r=json.load(open('eval/ci-results.json')); assert r['summary']['hybrid']['all_sources_at_3'] >= 0.95"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: retrieval-results
+          path: eval/ci-results.json
   container:
     runs-on: ubuntu-latest
     steps:

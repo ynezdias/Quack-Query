@@ -6,3 +6,5 @@ chroma_db/
 .venv/
 
 .cache/
+
+eval/ci-results.json
