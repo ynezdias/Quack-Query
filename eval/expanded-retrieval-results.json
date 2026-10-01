@@ -1,0 +1,3950 @@
+{
+  "created_at": "2026-09-17T15:56:08.816396+00:00",
+  "dataset_sha256": "be6637bcb5236798d957f5eaece038e049a29a8853ac7685289e4c47f3ed831b",
+  "code_hashes": {
+    "rag.py": "2b5e813b4206e4edf73a2ccf4ee351677319e00f46a5652195b48a806b70d78b",
+    "retrieval.py": "c29e7061e8fc9789200818fe2456743556105bb94added31f239f00d6d5137cd",
+    "evaluate_expanded.py": "226cfa00335a4061448905f09aa1640b49fd5bb66e388a896d3c33a8957b088e"
+  },
+  "corpora": {
+    "synthetic": {
+      "collection": "quackquery_synthetic_416046ea2d2f44a480dc1e4a02a2e9ee",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "chunks": 22,
+      "documents": [
+        {
+          "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+          "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2026",
+          "characters": 1119
+        },
+        {
+          "filename": "02_Undergraduate_Admissions_Requirements_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/02_Undergraduate_Admissions_Requirements_2026.docx",
+          "content_hash": "eaaa495ff081b3f75e3fec6f6a6634de365ad6c0997b4ecb93332da4cf5fa15a",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2026",
+          "characters": 777
+        },
+        {
+          "filename": "03_CS_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/03_CS_Program_Handbook_2026.docx",
+          "content_hash": "a8a4f1ed199c1c21119d6b99bfea44d4ced7b29ba0fdf67606c6d40b87cb5514",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 736
+        },
+        {
+          "filename": "04_DS_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/04_DS_Program_Handbook_2026.docx",
+          "content_hash": "074448a906ab78309a3aace19ec3f4fe71fb6cd9b1f084bc86fe457fd4f78671",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 637
+        },
+        {
+          "filename": "05_Cybersecurity_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/05_Cybersecurity_Program_Handbook_2026.docx",
+          "content_hash": "8ccff87e05e5964c067f9aa50a43c945d703fdec8587f378652eae9691015f46",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 595
+        },
+        {
+          "filename": "06_Course_Catalog_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+          "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+          "source_type": "synthetic_test_data",
+          "publication_date": "June 15, 2026",
+          "characters": 1047
+        },
+        {
+          "filename": "07_Tuition_Fees_2025_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/07_Tuition_Fees_2025_2026.docx",
+          "content_hash": "eef1ec3d895a22b3c6fa167f1aa5c0d4b5014a24a246c5f8592aa776cad1e2ef",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 1, 2025",
+          "characters": 513
+        },
+        {
+          "filename": "08_Tuition_Fees_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/08_Tuition_Fees_2026_2027.docx",
+          "content_hash": "fa266eb938d52323015d7b548283149d539c2092f1fc58111c7a3e49d9b60422",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 1, 2026",
+          "characters": 513
+        },
+        {
+          "filename": "09_Academic_Calendar_2025_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/09_Academic_Calendar_2025_2026.docx",
+          "content_hash": "9a53c84d70878f2fa1a2cd97f7a4ec5be576f688b75a6701709978ac9b33e457",
+          "source_type": "synthetic_test_data",
+          "publication_date": "May 20, 2025",
+          "characters": 540
+        },
+        {
+          "filename": "10_Academic_Calendar_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/10_Academic_Calendar_2026_2027.docx",
+          "content_hash": "23733af2f7afb004209b434fe772c60e11ff064921befbcce54258638e325f89",
+          "source_type": "synthetic_test_data",
+          "publication_date": "May 20, 2026",
+          "characters": 533
+        },
+        {
+          "filename": "11_Scholarship_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/11_Scholarship_Policy_2026.docx",
+          "content_hash": "9635919983ac7560464377bed8a9e7a6c0a204fee39fc168e2d550d466619db7",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 10, 2026",
+          "characters": 624
+        },
+        {
+          "filename": "12_Assistantship_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/12_Assistantship_Policy_2026.docx",
+          "content_hash": "41ee502766524a5a1a3f3cf589247a79b7feca4ca83440500e59bf3460c99598",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 10, 2026",
+          "characters": 633
+        },
+        {
+          "filename": "13_Housing_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/13_Housing_Policy_2026.docx",
+          "content_hash": "47c10c083a40b87a64ae6e3db7f5d5ba4bfa789730cdcd2fd84fb53543512d0f",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 20, 2026",
+          "characters": 662
+        },
+        {
+          "filename": "14_Dining_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/14_Dining_Policy_2026.docx",
+          "content_hash": "200cfdb6b9f5f6a9323d65d68839e1688a61d059b5b31f7d0c855d17367b6871",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 20, 2026",
+          "characters": 497
+        },
+        {
+          "filename": "15_CS_Program_Handbook_2025.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx",
+          "content_hash": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 26, 2025",
+          "characters": 688
+        },
+        {
+          "filename": "16_Graduate_Admissions_2025.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+          "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2025",
+          "characters": 659
+        },
+        {
+          "filename": "17_Scholarship_Assistantship_FAQ_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/17_Scholarship_Assistantship_FAQ_2026.docx",
+          "content_hash": "f13ee99c83b4f25963d0855297f30a28ffd8831b251c34df261bf0c91c8a3868",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 15, 2026",
+          "characters": 704
+        },
+        {
+          "filename": "18_Student_Record_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/18_Student_Record_Policy_2026.docx",
+          "content_hash": "355145f24e0f172ff001266ef6359136574e6354bf0116d45558c868d7bf9ec8",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 5, 2026",
+          "characters": 536
+        },
+        {
+          "filename": "19_Registration_Add_Drop_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx",
+          "content_hash": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 18, 2026",
+          "characters": 597
+        },
+        {
+          "filename": "20_International_Student_Guidance_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/20_International_Student_Guidance_2026.docx",
+          "content_hash": "cd329962b60fe98c61fcd1d6a607ebd829a4877574a1dff40cc10c329a7d3807",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 22, 2026",
+          "characters": 609
+        }
+      ]
+    },
+    "verified": {
+      "collection": "quackquery_verified_ba71bdacec2641c5a6834badb99d3af4",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "chunks": 5,
+      "documents": [
+        {
+          "filename": "cs583_2023_2024_reviewed.txt",
+          "document_id": "verified/cs583_2023_2024_reviewed.txt",
+          "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+          "title": "Archived CS 583 catalog entry",
+          "academic_year": "2023-2024",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 639
+        },
+        {
+          "filename": "graduate_admissions_reviewed.txt",
+          "document_id": "verified/graduate_admissions_reviewed.txt",
+          "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/application-requirements",
+          "title": "Graduate admissions requirements",
+          "academic_year": "unknown",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 599
+        },
+        {
+          "filename": "graduate_tuition_2025_2026_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2025_2026_reviewed.txt",
+          "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2025 and Spring 2026",
+          "academic_year": "2025-2026",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "graduate_tuition_2026_2027_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2026_2027_reviewed.txt",
+          "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2026 and Spring 2027",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "registrar_dates_reviewed.txt",
+          "document_id": "verified/registrar_dates_reviewed.txt",
+          "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+          "title": "Registrar long-term dates",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 406
+        }
+      ]
+    }
+  },
+  "model": "openai/gpt-oss-20b",
+  "top_k": 3,
+  "answer_evaluation": false,
+  "case_count": 75,
+  "limitations": "Regression cases, not held-out accuracy. Source presence is not evidence sufficiency. Status matching is not factual correctness. Review answers against reference_answer manually, including entailment, completeness, units, scope and contradictions.",
+  "results": [
+    {
+      "id": "S001",
+      "user_question_number": 1,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What materials are required for synthetic graduate admissions?",
+      "reference_answer": "Application, fee, transcripts, resume/CV, statement of purpose and program-specific materials.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08532280000008541,
+      "retrieved": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S001",
+      "user_question_number": 1,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What materials are required for synthetic graduate admissions?",
+      "reference_answer": "Application, fee, transcripts, resume/CV, statement of purpose and program-specific materials.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0751365999999507,
+      "retrieved": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S002",
+      "user_question_number": 2,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What additional requirements may apply to international graduate applicants?",
+      "reference_answer": "English-language evidence and immigration documentation after admission; requirements may vary.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08252059999995254,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S002",
+      "user_question_number": 2,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What additional requirements may apply to international graduate applicants?",
+      "reference_answer": "English-language evidence and immigration documentation after admission; requirements may vary.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08016059999999925,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S003",
+      "user_question_number": 3,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What is the difference between first-year and transfer undergraduate applicants?",
+      "reference_answer": "Secondary-school records versus postsecondary transcripts and transfer-specific information.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09591210000007777,
+      "retrieved": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S003",
+      "user_question_number": 3,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "What is the difference between first-year and transfer undergraduate applicants?",
+      "reference_answer": "Secondary-school records versus postsecondary transcripts and transfer-specific information.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09225100000003295,
+      "retrieved": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S004",
+      "user_question_number": 4,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "Do all applicant types have identical requirements?",
+      "reference_answer": "No; distinguish first-year, transfer and international applicants.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07588809999970181,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S004",
+      "user_question_number": 4,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "Do all applicant types have identical requirements?",
+      "reference_answer": "No; distinguish first-year, transfer and international applicants.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0761714000000211,
+      "retrieved": [
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S005",
+      "user_question_number": 5,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "Can program-specific requirements override general admissions requirements?",
+      "reference_answer": "Use applicable program-specific requirements and entry term; do not assume a universal override rule.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08464730000014242,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S005",
+      "user_question_number": 5,
+      "corpus": "synthetic",
+      "category": "admissions",
+      "question": "Can program-specific requirements override general admissions requirements?",
+      "reference_answer": "Use applicable program-specific requirements and entry term; do not assume a universal override rule.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0914772000000994,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S006",
+      "user_question_number": 6,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Which sample core courses are listed in the 2026 Computer Science handbook?",
+      "reference_answer": "CS 541, CS 559 and CS 583.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08802160000004733,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S006",
+      "user_question_number": 6,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Which sample core courses are listed in the 2026 Computer Science handbook?",
+      "reference_answer": "CS 541, CS 559 and CS 583.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.10049200000003111,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "05_Cybersecurity_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S007",
+      "user_question_number": 7,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Is CS 583 listed in the 2025 CS handbook?",
+      "reference_answer": "Mentioned, but explicitly not a sample core course; distinguish a mention from a core requirement.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07972339999969336,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S007",
+      "user_question_number": 7,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Is CS 583 listed in the 2025 CS handbook?",
+      "reference_answer": "Mentioned, but explicitly not a sample core course; distinguish a mention from a core requirement.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07844410000006974,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S008",
+      "user_question_number": 8,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "What is the difference between the 2025 and 2026 CS handbooks?",
+      "reference_answer": "CS 583 is added to the sample core list in 2026; CS 541 and CS 559 remain.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08779609999965032,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S008",
+      "user_question_number": 8,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "What is the difference between the 2025 and 2026 CS handbooks?",
+      "reference_answer": "CS 583 is added to the sample core list in 2026; CS 541 and CS 559 remain.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0872799999997369,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S009",
+      "user_question_number": 9,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "What courses are mentioned in the Data Science handbook?",
+      "reference_answer": "DS 510, DS 520 and DS 550.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08532169999989492,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S009",
+      "user_question_number": 9,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "What courses are mentioned in the Data Science handbook?",
+      "reference_answer": "DS 510, DS 520 and DS 550.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07879920000004859,
+      "retrieved": [
+        "04_DS_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "05_Cybersecurity_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S010",
+      "user_question_number": 10,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Which handbook contains CY 560 Secure Software?",
+      "reference_answer": "Cybersecurity 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "05_Cybersecurity_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0792329000000791,
+      "retrieved": [
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S010",
+      "user_question_number": 10,
+      "corpus": "synthetic",
+      "category": "handbooks",
+      "question": "Which handbook contains CY 560 Secure Software?",
+      "reference_answer": "Cybersecurity 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "05_Cybersecurity_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07941000000027998,
+      "retrieved": [
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "04_DS_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S011",
+      "user_question_number": 11,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Are program requirements the same as course prerequisites?",
+      "reference_answer": "No; a program requirement does not waive a catalog prerequisite.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08207469999979367,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S011",
+      "user_question_number": 11,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Are program requirements the same as course prerequisites?",
+      "reference_answer": "No; a program requirement does not waive a catalog prerequisite.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08359999999993306,
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S012",
+      "user_question_number": 12,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for CS 559?",
+      "reference_answer": "Linear algebra and probability/statistics.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07515719999992143,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S012",
+      "user_question_number": 12,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for CS 559?",
+      "reference_answer": "Linear algebra and probability/statistics.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09824290000005931,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S013",
+      "user_question_number": 13,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for CS 583?",
+      "reference_answer": "CS 559 or an approved equivalent.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08369330000004993,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 0.0,
+      "all_sources": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "id": "S013",
+      "user_question_number": 13,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for CS 583?",
+      "reference_answer": "CS 559 or an approved equivalent.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0858514000001378,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S014",
+      "user_question_number": 14,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What does CS 541 cover?",
+      "reference_answer": "Search, learning and reasoning in artificial intelligence.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09195190000036746,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S014",
+      "user_question_number": 14,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What does CS 541 cover?",
+      "reference_answer": "Search, learning and reasoning in artificial intelligence.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09081009999999878,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S015",
+      "user_question_number": 15,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "Which course discusses neural-network architectures?",
+      "reference_answer": "CS 583 Deep Learning.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09302620000016759,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S015",
+      "user_question_number": 15,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "Which course discusses neural-network architectures?",
+      "reference_answer": "CS 583 Deep Learning.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08017040000004272,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S016",
+      "user_question_number": 16,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for DS 550?",
+      "reference_answer": "DS 510 or an approved equivalent.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07224180000002889,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S016",
+      "user_question_number": 16,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "What is the prerequisite for DS 550?",
+      "reference_answer": "DS 510 or an approved equivalent.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07895890000008876,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S017",
+      "user_question_number": 17,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "Which courses require statistics knowledge?",
+      "reference_answer": "CS 559 requires probability/statistics; DS 510 requires introductory statistics. DS 550 has a course prerequisite, not an identical direct statistics requirement.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.070895500000006,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S017",
+      "user_question_number": 17,
+      "corpus": "synthetic",
+      "category": "courses",
+      "question": "Which courses require statistics knowledge?",
+      "reference_answer": "CS 559 requires probability/statistics; DS 510 requires introductory statistics. DS 550 has a course prerequisite, not an identical direct statistics requirement.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07870939999975235,
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S018",
+      "user_question_number": 18,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Can a student take CS 583 without CS 559?",
+      "reference_answer": "An approved equivalent is allowed; do not claim an unconditional yes or no.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07618779999984326,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 0.0,
+      "all_sources": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "id": "S018",
+      "user_question_number": 18,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Can a student take CS 583 without CS 559?",
+      "reference_answer": "An approved equivalent is allowed; do not claim an unconditional yes or no.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07633640000040032,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 0.0,
+      "all_sources": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "id": "S019",
+      "user_question_number": 19,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "A student completed CS 559. Which advanced course can they take next?",
+      "reference_answer": "CS 583 prerequisite is met; enrollment or admission is not guaranteed.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07656040000028952,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S019",
+      "user_question_number": 19,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "A student completed CS 559. Which advanced course can they take next?",
+      "reference_answer": "CS 583 prerequisite is met; enrollment or admission is not guaranteed.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08127879999983634,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S020",
+      "user_question_number": 20,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "A student knows programming but not linear algebra. Can they take CS 559?",
+      "reference_answer": "Programming alone does not meet the stated linear algebra and probability/statistics prerequisites.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08700369999996838,
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S020",
+      "user_question_number": 20,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "A student knows programming but not linear algebra. Can they take CS 559?",
+      "reference_answer": "Programming alone does not meet the stated linear algebra and probability/statistics prerequisites.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09111780000012004,
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S021",
+      "user_question_number": 21,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Which document should answer prerequisite questions: handbook or catalog?",
+      "reference_answer": "Course catalog; the handbook describes program requirements.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07812180000018998,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S021",
+      "user_question_number": 21,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Which document should answer prerequisite questions: handbook or catalog?",
+      "reference_answer": "Course catalog; the handbook describes program requirements.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07917989999987185,
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S022",
+      "user_question_number": 22,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Does completing a program requirement automatically satisfy prerequisites?",
+      "reference_answer": "No; check the separate catalog prerequisites.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08069539999996778,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S022",
+      "user_question_number": 22,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Does completing a program requirement automatically satisfy prerequisites?",
+      "reference_answer": "No; check the separate catalog prerequisites.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08416400000032809,
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S023",
+      "user_question_number": 23,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was synthetic graduate tuition in 2025-2026?",
+      "reference_answer": "1850 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07365249999975276,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S023",
+      "user_question_number": 23,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was synthetic graduate tuition in 2025-2026?",
+      "reference_answer": "1850 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07761679999975968,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S024",
+      "user_question_number": 24,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was synthetic graduate tuition in 2026-2027?",
+      "reference_answer": "1925 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07329130000016448,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S024",
+      "user_question_number": 24,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was synthetic graduate tuition in 2026-2027?",
+      "reference_answer": "1925 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07749690000036935,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S025",
+      "user_question_number": 25,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "How much did synthetic graduate tuition increase between 2025-2026 and 2026-2027?",
+      "reference_answer": "75 dollars per credit, from 1850 to 1925.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08577659999991738,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S025",
+      "user_question_number": 25,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "How much did synthetic graduate tuition increase between 2025-2026 and 2026-2027?",
+      "reference_answer": "75 dollars per credit, from 1850 to 1925.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0832829999999376,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S026",
+      "user_question_number": 26,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was the technology fee in 2026-2027?",
+      "reference_answer": "190 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08012830000006943,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S026",
+      "user_question_number": 26,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "What was the technology fee in 2026-2027?",
+      "reference_answer": "190 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08195999999998094,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S027",
+      "user_question_number": 27,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "Compare all fees between 2025-2026 and 2026-2027.",
+      "reference_answer": "Technology 180 to 190 (+10); student services 120 to 125 (+5), per semester. Tuition 1850 to 1925 (+75) per credit; preserve units.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09304730000030759,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S027",
+      "user_question_number": 27,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "Compare all fees between 2025-2026 and 2026-2027.",
+      "reference_answer": "Technology 180 to 190 (+10); student services 120 to 125 (+5), per semester. Tuition 1850 to 1925 (+75) per credit; preserve units.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09361429999989923,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S028",
+      "user_question_number": 28,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When did Fall 2026 classes begin?",
+      "reference_answer": "September 1, 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07967760000019553,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S028",
+      "user_question_number": 28,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When did Fall 2026 classes begin?",
+      "reference_answer": "September 1, 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07961269999987053,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S029",
+      "user_question_number": 29,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When did Spring 2027 classes begin?",
+      "reference_answer": "January 19, 2027.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08051419999992504,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S029",
+      "user_question_number": 29,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When did Spring 2027 classes begin?",
+      "reference_answer": "January 19, 2027.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07318770000028962,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S030",
+      "user_question_number": 30,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "What was the final exam period in Fall 2025?",
+      "reference_answer": "December 15-19, 2025.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0815732000000935,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S030",
+      "user_question_number": 30,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "What was the final exam period in Fall 2025?",
+      "reference_answer": "December 15-19, 2025.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07880160000013348,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S031",
+      "user_question_number": 31,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "What are the differences between the 2025-2026 and 2026-2027 calendars?",
+      "reference_answer": "Compare fall and spring starts, last class days and exam ranges with explicit years; all six events per calendar.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09160259999998743,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "14_Dining_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S031",
+      "user_question_number": 31,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "What are the differences between the 2025-2026 and 2026-2027 calendars?",
+      "reference_answer": "Compare fall and spring starts, last class days and exam ranges with explicit years; all six events per calendar.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08022459999983766,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S032",
+      "user_question_number": 32,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When is the last day of classes in Spring 2027?",
+      "reference_answer": "April 30, 2027 in the synthetic calendar.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07463579999966896,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S032",
+      "user_question_number": 32,
+      "corpus": "synthetic",
+      "category": "calendar",
+      "question": "When is the last day of classes in Spring 2027?",
+      "reference_answer": "April 30, 2027 in the synthetic calendar.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0748009999997521,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S033",
+      "user_question_number": 33,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Does scholarship eligibility guarantee an assistantship?",
+      "reference_answer": "No; separate programs with availability and department approval.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07516929999974309,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S033",
+      "user_question_number": 33,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Does scholarship eligibility guarantee an assistantship?",
+      "reference_answer": "No; separate programs with availability and department approval.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0757419999999911,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S034",
+      "user_question_number": 34,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Does assistantship eligibility guarantee an appointment?",
+      "reference_answer": "No; availability and department approval still apply.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07126230000039868,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S034",
+      "user_question_number": 34,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Does assistantship eligibility guarantee an appointment?",
+      "reference_answer": "No; availability and department approval still apply.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07866969999986395,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S035",
+      "user_question_number": 35,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "What conditions affect scholarship renewal?",
+      "reference_answer": "Annual review and satisfactory academic progress; do not invent a numeric GPA cutoff.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07843619999994189,
+      "retrieved": [
+        "11_Scholarship_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S035",
+      "user_question_number": 35,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "What conditions affect scholarship renewal?",
+      "reference_answer": "Annual review and satisfactory academic progress; do not invent a numeric GPA cutoff.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0775763999999981,
+      "retrieved": [
+        "11_Scholarship_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S036",
+      "user_question_number": 36,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Are scholarships and assistantships the same thing?",
+      "reference_answer": "No, separate programs with different conditions.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07770470000014029,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S036",
+      "user_question_number": 36,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Are scholarships and assistantships the same thing?",
+      "reference_answer": "No, separate programs with different conditions.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08148160000018834,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S037",
+      "user_question_number": 37,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Which document should answer assistantship questions?",
+      "reference_answer": "Assistantship Policy; individual appointment notice controls specific duties and dates.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07662690000006478,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "20_International_Student_Guidance_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S037",
+      "user_question_number": 37,
+      "corpus": "synthetic",
+      "category": "funding",
+      "question": "Which document should answer assistantship questions?",
+      "reference_answer": "Assistantship Policy; individual appointment notice controls specific duties and dates.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08223090000001321,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "20_International_Student_Guidance_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S038",
+      "user_question_number": 38,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Does housing eligibility guarantee housing?",
+      "reference_answer": "No; availability and deadlines affect assignment.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "13_Housing_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08731339999985721,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "14_Dining_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S038",
+      "user_question_number": 38,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Does housing eligibility guarantee housing?",
+      "reference_answer": "No; availability and deadlines affect assignment.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "13_Housing_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07078720000026806,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "14_Dining_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S039",
+      "user_question_number": 39,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "How are meal plans determined?",
+      "reference_answer": "Student category and housing arrangement; consult applicable plan terms.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "14_Dining_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08126360000005661,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S039",
+      "user_question_number": 39,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "How are meal plans determined?",
+      "reference_answer": "Student category and housing arrangement; consult applicable plan terms.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "14_Dining_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0728638000000501,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S040",
+      "user_question_number": 40,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Can dining rules change across academic years?",
+      "reference_answer": "Yes, consult the applicable year's rules.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "14_Dining_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.10242209999978513,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S040",
+      "user_question_number": 40,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Can dining rules change across academic years?",
+      "reference_answer": "Yes, consult the applicable year's rules.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "14_Dining_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07982230000015988,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "20_International_Student_Guidance_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S041",
+      "user_question_number": 41,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Which document should answer contract-specific housing questions?",
+      "reference_answer": "The housing agreement, not a generic policy summary.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "13_Housing_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.06910570000036387,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S041",
+      "user_question_number": 41,
+      "corpus": "synthetic",
+      "category": "housing",
+      "question": "Which document should answer contract-specific housing questions?",
+      "reference_answer": "The housing agreement, not a generic policy summary.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "13_Housing_Policy_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07230600000002596,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "20_International_Student_Guidance_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S042",
+      "user_question_number": 42,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "What changed between the 2025 and 2026 CS handbooks?",
+      "reference_answer": "CS 583 becomes a sample core course in 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08024109999996654,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "S042",
+      "user_question_number": 42,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "What changed between the 2025 and 2026 CS handbooks?",
+      "reference_answer": "CS 583 becomes a sample core course in 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09561189999976705,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "15_CS_Program_Handbook_2025.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "S043",
+      "user_question_number": 43,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "Which document is newer: Graduate Admissions 2025 or Graduate Admissions 2026?",
+      "reference_answer": "2026 is newer; recency alone does not supersede a requested historical year.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08930529999997816,
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "source_recall": 0.5,
+      "all_sources": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S043",
+      "user_question_number": 43,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "Which document is newer: Graduate Admissions 2025 or Graduate Admissions 2026?",
+      "reference_answer": "2026 is newer; recency alone does not supersede a requested historical year.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09403799999972762,
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S044",
+      "user_question_number": 44,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "If two documents conflict, which should be preferred?",
+      "reference_answer": "clarify: Ask which documents, topic and applicable year; never universally prefer the newest.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07340810000005149,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "20_International_Student_Guidance_2026.docx",
+        "18_Student_Record_Policy_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S044",
+      "user_question_number": 44,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "If two documents conflict, which should be preferred?",
+      "reference_answer": "clarify: Ask which documents, topic and applicable year; never universally prefer the newest.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.074166299999888,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "18_Student_Record_Policy_2026.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S045",
+      "user_question_number": 45,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "Should a program-specific document override a general document?",
+      "reference_answer": "Apply the relevant program and entry-term requirements; do not infer universal authority across unrelated policies.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07695860000012544,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "04_DS_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S045",
+      "user_question_number": 45,
+      "corpus": "synthetic",
+      "category": "versions",
+      "question": "Should a program-specific document override a general document?",
+      "reference_answer": "Apply the relevant program and entry-term requirements; do not infer universal authority across unrelated policies.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0836101999998391,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S046",
+      "user_question_number": 46,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "When do classes start?",
+      "reference_answer": "clarify: Ask academic year and term.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07324879999987388,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S046",
+      "user_question_number": 46,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "When do classes start?",
+      "reference_answer": "clarify: Ask academic year and term.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0743849999998929,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S047",
+      "user_question_number": 47,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What is tuition?",
+      "reference_answer": "clarify: Ask academic year and relevant student/program scope.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07146069999998872,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S047",
+      "user_question_number": 47,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What is tuition?",
+      "reference_answer": "clarify: Ask academic year and relevant student/program scope.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.06858710000005885,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S048",
+      "user_question_number": 48,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What are the requirements?",
+      "reference_answer": "clarify: Ask applicant type or program.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.06961550000005445,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S048",
+      "user_question_number": 48,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What are the requirements?",
+      "reference_answer": "clarify: Ask applicant type or program.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07283689999985654,
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S049",
+      "user_question_number": 49,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What are the fees?",
+      "reference_answer": "clarify: Ask academic year and fee/student scope.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07031800000004296,
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S049",
+      "user_question_number": 49,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What are the fees?",
+      "reference_answer": "clarify: Ask academic year and fee/student scope.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07616379999990386,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S050",
+      "user_question_number": 50,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What handbook are you referring to?",
+      "reference_answer": "clarify: Ask CS, Data Science or Cybersecurity; no prior conversation given.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08088379999981044,
+      "retrieved": [
+        "20_International_Student_Guidance_2026.docx",
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S050",
+      "user_question_number": 50,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "What handbook are you referring to?",
+      "reference_answer": "clarify: Ask CS, Data Science or Cybersecurity; no prior conversation given.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07964089999995849,
+      "retrieved": [
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "04_DS_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S051",
+      "user_question_number": 51,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the synthetic MBA tuition?",
+      "reference_answer": "unknown: No MBA-specific rate is provided; do not assert generic graduate tuition is MBA tuition.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0785067000001618,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S051",
+      "user_question_number": 51,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the synthetic MBA tuition?",
+      "reference_answer": "unknown: No MBA-specific rate is provided; do not assert generic graduate tuition is MBA tuition.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07906940000020768,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S052",
+      "user_question_number": 52,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the prerequisite for CS 700?",
+      "reference_answer": "unknown: Course absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08374159999993935,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S052",
+      "user_question_number": 52,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the prerequisite for CS 700?",
+      "reference_answer": "unknown: Course absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0852694000000156,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S053",
+      "user_question_number": 53,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the housing deposit amount?",
+      "reference_answer": "unknown: Amount absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08668009999973947,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S053",
+      "user_question_number": 53,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the housing deposit amount?",
+      "reference_answer": "unknown: Amount absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08191130000022895,
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "14_Dining_Policy_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S054",
+      "user_question_number": 54,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the dining hall closing time?",
+      "reference_answer": "unknown: Hours absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0809108000003107,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S054",
+      "user_question_number": 54,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the dining hall closing time?",
+      "reference_answer": "unknown: Hours absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07759840000016993,
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S055",
+      "user_question_number": 55,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the GPA requirement for scholarships?",
+      "reference_answer": "unknown: Numeric cutoff absent; distinguish qualitative academic standing.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08122069999990345,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S055",
+      "user_question_number": 55,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the GPA requirement for scholarships?",
+      "reference_answer": "unknown: Numeric cutoff absent; distinguish qualitative academic standing.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07593229999974938,
+      "retrieved": [
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "V001",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "What is the graduate application fee?",
+      "reference_answer": "60 dollars, nonrefundable.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.06945639999958075,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V001",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "What is the graduate application fee?",
+      "reference_answer": "60 dollars, nonrefundable.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07280820000005406,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V002",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "How long should the graduate statement of purpose be?",
+      "reference_answer": "500-1000 words.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07845970000016678,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V002",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "How long should the graduate statement of purpose be?",
+      "reference_answer": "500-1000 words.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09083499999997002,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V003",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "How many recommendations are generally required for graduate applications?",
+      "reference_answer": "Most require two; some PhD programs require three; program-specific qualifications matter.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0822637000001123,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V003",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "How many recommendations are generally required for graduate applications?",
+      "reference_answer": "Most require two; some PhD programs require three; program-specific qualifications matter.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08781060000001162,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V004",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "Can I apply with unofficial transcripts?",
+      "reference_answer": "Yes for application; official transcripts are required before classes.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08531040000025314,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V004",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "Can I apply with unofficial transcripts?",
+      "reference_answer": "Yes for application; official transcripts are required before classes.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09747340000012628,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V005",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "Must I include transcripts from an institution where I earned no degree?",
+      "reference_answer": "Yes, every postsecondary institution attended.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08634910000000673,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V005",
+      "corpus": "verified",
+      "category": "admissions",
+      "question": "Must I include transcripts from an institution where I earned no degree?",
+      "reference_answer": "Yes, every postsecondary institution attended.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_admissions_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09221639999987019,
+      "retrieved": [
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V006",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is graduate tuition for 9-12 credits in fall 2025?",
+      "reference_answer": "22110 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09364090000008218,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "V006",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is graduate tuition for 9-12 credits in fall 2025?",
+      "reference_answer": "22110 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.10262839999995776,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "V007",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is graduate tuition for 9-12 credits in fall 2026?",
+      "reference_answer": "22995 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08265199999959805,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V007",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is graduate tuition for 9-12 credits in fall 2026?",
+      "reference_answer": "22995 dollars per semester.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08371969999961948,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V008",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is the graduate per-credit rate below nine credits for 2025-2026?",
+      "reference_answer": "1993 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09129269999993994,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "V008",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is the graduate per-credit rate below nine credits for 2025-2026?",
+      "reference_answer": "1993 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08707159999994474,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "V009",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is the graduate per-credit rate below nine credits for 2026-2027?",
+      "reference_answer": "2152 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08894329999975525,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V009",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What is the graduate per-credit rate below nine credits for 2026-2027?",
+      "reference_answer": "2152 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09259160000010525,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V010",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "Compare graduate tuition for 9-12 credits in 2025-2026 and 2026-2027.",
+      "reference_answer": "22110 to 22995 dollars per semester; increase 885.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09502940000038507,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V010",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "Compare graduate tuition for 9-12 credits in 2025-2026 and 2026-2027.",
+      "reference_answer": "22110 to 22995 dollars per semester; increase 885.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09343649999982517,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V011",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "How much did the graduate per-credit rate below nine credits increase from 2025-2026 to 2026-2027?",
+      "reference_answer": "1993 to 2152; increase 159 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09712709999985236,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V011",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "How much did the graduate per-credit rate below nine credits increase from 2025-2026 to 2026-2027?",
+      "reference_answer": "1993 to 2152; increase 159 dollars per credit.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.10066090000009353,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V012",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What are full-time and part-time graduate general service fees in 2026-2027?",
+      "reference_answer": "715 and 470 dollars per semester, respectively.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.11374109999997017,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V012",
+      "corpus": "verified",
+      "category": "tuition",
+      "question": "What are full-time and part-time graduate general service fees in 2026-2027?",
+      "reference_answer": "715 and 470 dollars per semester, respectively.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08203270000012708,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V013",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When do Fall 2026 classes begin?",
+      "reference_answer": "September 1, 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07528289999982007,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V013",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When do Fall 2026 classes begin?",
+      "reference_answer": "September 1, 2026.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08067179999989094,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07670089999965057,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07865320000018983,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V015",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When do Spring 2027 classes begin?",
+      "reference_answer": "January 19, 2027.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.06851359999973283,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V015",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When do Spring 2027 classes begin?",
+      "reference_answer": "January 19, 2027.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07563639999989391,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V016",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Spring 2027 classes?",
+      "reference_answer": "May 5, 2027; not the synthetic April 30.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09048480000001291,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V016",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Spring 2027 classes?",
+      "reference_answer": "May 5, 2027; not the synthetic April 30.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08032109999976456,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V017",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "How many credits was CS 583 in the archived 2023-2024 catalog?",
+      "reference_answer": "Three credits; historical scope.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.10324350000018967,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V017",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "How many credits was CS 583 in the archived 2023-2024 catalog?",
+      "reference_answer": "Three credits; historical scope.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07991579999998066,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0798251999999593,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08074759999999515,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V019",
+      "corpus": "verified",
+      "category": "versions",
+      "question": "Does the archived CS 583 entry prove the current prerequisite?",
+      "reference_answer": "No; 2023-2024 archived evidence does not establish current requirements.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.07627999999976964,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V019",
+      "corpus": "verified",
+      "category": "versions",
+      "question": "Does the archived CS 583 entry prove the current prerequisite?",
+      "reference_answer": "No; 2023-2024 archived evidence does not establish current requirements.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07662840000011784,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "registrar_dates_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V020",
+      "corpus": "verified",
+      "category": "unknown",
+      "question": "What is my current GPA?",
+      "reference_answer": "unknown: No personal records are provided.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0728742000001148,
+      "retrieved": [
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "V020",
+      "corpus": "verified",
+      "category": "unknown",
+      "question": "What is my current GPA?",
+      "reference_answer": "unknown: No personal records are provided.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08202250000022104,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    }
+  ],
+  "completed_cases": 75,
+  "summary": {
+    "synthetic": {
+      "semantic": {
+        "rows": 55,
+        "source_recall": {
+          "count": 44,
+          "mean": 0.8977272727272727
+        },
+        "all_sources": {
+          "count": 44,
+          "mean": 0.8409090909090909
+        },
+        "reciprocal_rank": {
+          "count": 44,
+          "mean": 0.7234848484848485
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      },
+      "hybrid": {
+        "rows": 55,
+        "source_recall": {
+          "count": 44,
+          "mean": 0.9431818181818182
+        },
+        "all_sources": {
+          "count": 44,
+          "mean": 0.9090909090909091
+        },
+        "reciprocal_rank": {
+          "count": 44,
+          "mean": 0.8181818181818182
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      }
+    },
+    "verified": {
+      "semantic": {
+        "rows": 20,
+        "source_recall": {
+          "count": 19,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 19,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 19,
+          "mean": 0.9473684210526315
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      },
+      "hybrid": {
+        "rows": 20,
+        "source_recall": {
+          "count": 19,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 19,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 19,
+          "mean": 0.9473684210526315
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      }
+    }
+  },
+  "by_category": {
+    "admissions": {
+      "rows": 10,
+      "source_recall": {
+        "count": 10,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 10,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 10,
+        "mean": 0.9333333333333333
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "ambiguity": {
+      "rows": 6,
+      "source_recall": {
+        "count": 0,
+        "mean": null
+      },
+      "all_sources": {
+        "count": 0,
+        "mean": null
+      },
+      "reciprocal_rank": {
+        "count": 0,
+        "mean": null
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "calendar": {
+      "rows": 9,
+      "source_recall": {
+        "count": 9,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 9,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 9,
+        "mean": 0.8333333333333334
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "courses": {
+      "rows": 8,
+      "source_recall": {
+        "count": 8,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 8,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 8,
+        "mean": 0.8333333333333334
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "funding": {
+      "rows": 5,
+      "source_recall": {
+        "count": 5,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 5,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 5,
+        "mean": 0.8
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "handbooks": {
+      "rows": 4,
+      "source_recall": {
+        "count": 4,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 4,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 4,
+        "mean": 0.875
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "housing": {
+      "rows": 4,
+      "source_recall": {
+        "count": 4,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 4,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 4,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "reasoning": {
+      "rows": 6,
+      "source_recall": {
+        "count": 6,
+        "mean": 0.6666666666666666
+      },
+      "all_sources": {
+        "count": 6,
+        "mean": 0.5
+      },
+      "reciprocal_rank": {
+        "count": 6,
+        "mean": 0.6666666666666666
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "tuition": {
+      "rows": 12,
+      "source_recall": {
+        "count": 12,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 12,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 12,
+        "mean": 0.9166666666666666
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "unknown": {
+      "rows": 6,
+      "source_recall": {
+        "count": 0,
+        "mean": null
+      },
+      "all_sources": {
+        "count": 0,
+        "mean": null
+      },
+      "reciprocal_rank": {
+        "count": 0,
+        "mean": null
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    },
+    "versions": {
+      "rows": 5,
+      "source_recall": {
+        "count": 5,
+        "mean": 0.9
+      },
+      "all_sources": {
+        "count": 5,
+        "mean": 0.8
+      },
+      "reciprocal_rank": {
+        "count": 5,
+        "mean": 0.8
+      },
+      "status_correct": {
+        "count": 0,
+        "mean": null
+      },
+      "generation_errors": 0
+    }
+  }
+}

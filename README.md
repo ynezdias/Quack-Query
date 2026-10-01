@@ -1,69 +1,88 @@
 # QuackQuery
 
-A university document assistant with cited answers and isolated knowledge bases.
-Built with Streamlit, ChromaDB, Sentence Transformers, and Groq.
+A portfolio AI application for answering university-document questions with
+inspectable evidence, isolated corpora, hybrid retrieval, and measured evaluation.
 
-## Current capabilities
+## Implemented
 
-- Recursively extracts PDF and DOCX files, including DOCX table rows.
-- Keeps the 20-document synthetic demo separate from the original, unverified documents.
-- Shares one semantic embedding configuration between ingestion and retrieval; no hash fallback.
-- Builds a fresh collection before publishing its name through an atomic manifest replacement.
-  Removed files and obsolete chunks disappear from the active snapshot after successful ingestion.
-- Records source paths, content hashes, publication dates when explicitly labeled, and source type.
-- Shows document locations without inventing DOCX page numbers.
-- Escapes source and generated content before rendering HTML.
+- Recursive PDF/DOCX ingestion with document hashes and atomic index publication.
+- Separate synthetic-demo, original/unverified, and reviewed official-source knowledge bases.
+- Shared semantic embeddings plus BM25 search combined with reciprocal-rank fusion.
+- Structured answers, citation-ID validation, and matching evidence quotations.
+- Expandable evidence panels and original-document downloads.
+- Session conversation history, follow-up context, corpus isolation, and clear-history control.
+- Bounded inputs/history, per-session request limits, provider timeouts, and safe error handling.
+- The original 32-question benchmark plus a 75-question expanded regression suite, including 20 official-source cases.
+- Docker/Compose deployment configuration, persistent index volume, health check, and CI.
 
 ## Run locally
 
-Use Python 3.10 or newer with dependencies from `requirements.txt`:
+Use Python 3.11 and a virtual environment. Install `requirements.txt`, configure
+`GROQ_API_KEY` in `.env`, then run:
 
 ```powershell
-python -m pip install -r requirements.txt
-python -m src.ingest --dry-run
 python -m src.ingest --corpus synthetic
 python -m src.ingest --corpus unverified
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
-Set `GROQ_API_KEY` in a local `.env` file. The first ingestion may download
-`all-MiniLM-L6-v2`. Select a knowledge base in the sidebar.
-The default is the fictional synthetic demo, not official university guidance.
-The original documents have not been verified against official sources.
+The default Groq model is `openai/gpt-oss-20b`; override it with `GROQ_MODEL`.
+The first model load downloads `all-MiniLM-L6-v2` into `.cache/`.
+Use `python -m src.ingest --dry-run` to inspect extraction without downloading weights.
 
-`python src/ingest.py` also works. Paths are relative to the repository, not the shell directory.
-PDF takes precedence over a same-name DOCX in the same folder.
-Folders containing `synthetic` in their relative path belong to the synthetic corpus;
-keep all synthetic test documents under the supplied synthetic folder.
+The supplied 20 DOCX documents are fictional test data, not official university
+policies. The five original PDFs are marked unverified. Same-name PDF/DOCX pairs
+use the PDF. Synthetic files must stay under folders containing `synthetic`.
 
-## Verification
+## Evaluate and test
 
 ```powershell
 python -m unittest discover -s tests -v
+python -m src.evaluate --split test --output eval/test-results.json
+python -m src.evaluate --split test --answers --output eval/answer-results-paced.json
 ```
 
-Tests cover source isolation, duplicate representations, DOCX provenance,
-short passages, snapshot replacement, and preserving the active index on extraction failure.
-Snapshot tests use deterministic test vectors; they do not measure semantic retrieval quality.
+Answer evaluation calls Groq and uses 20-second pacing by default. Evaluation
+measures retrieval at three chunks; the interactive app uses eight. Read the
+[protocol](eval/README.md) and [results](docs/results.md) before interpreting scores.
 
-## Storage and limitations
+## Deployment
 
-`chroma_db/quackquery.json` contains the active collection names and source inventory.
-Existing legacy collections are not modified. Prior snapshots are retained for recovery
-and currently require manual cleanup. Run only one ingestion process at a time.
-An empty or unreadable corpus does not replace an existing index.
-Scanned PDFs require a future OCR stage. DOCX extraction handles body paragraphs and
-tables, not headers, footers, embedded images, or pagination.
-Conflict detection remains prompt-based and is not guaranteed.
+```powershell
+docker compose up --build -d
+```
 
-## Next milestones
+Compose requires `.env` and exposes http://localhost:8501. It persists the index
+in a named volume. Read the [runbook](docs/deployment-runbook.md) before public hosting.
+No public deployment or Git push has been performed.
 
-1. Review a labeled evaluation set and record retrieval quality and latency.
-2. Compare keyword/semantic hybrid retrieval and reranking against the baseline.
-3. Add structured answers, citation validation, and a source viewer.
-4. Add conversational follow-ups and explicit academic-year/program metadata.
-5. Add deployment automation and operational monitoring.
+## Design and limitations
+
+See [architecture](docs/architecture.md). Citation checks prove that a quotation
+exists in the selected source, not that the answer logically follows from it.
+Conflict reasoning is model-based. Conversation references use a simple heuristic.
+The small synthetic evaluation cannot establish real-world factual accuracy.
+OCR, cross-encoder reranking, accounts, private student records, and multi-replica
+operation are not implemented. Prior index snapshots are retained for recovery.
 
 ## License
 
 See [LICENSE](LICENSE).
+
+## Expanded university evaluation
+
+The [expanded benchmark](eval/expanded_questions.json) includes all 55 proposed
+questions and 20 cases grounded in five reviewed summaries of official Stevens
+pages. Choose **Reviewed university sources** in the app to query these separately
+from fictional policies. These are dated, assistant-reviewed factual summaries,
+not independently verified copies of complete university documents.
+
+```powershell
+.venv/Scripts/python.exe -m src.ingest --corpus verified
+.venv/Scripts/python.exe -m src.evaluate_expanded --top-k 3 --output eval/expanded-retrieval-results.json
+.venv/Scripts/python.exe -m src.evaluate_expanded --answers --output eval/expanded-full-answers.json
+```
+
+The last command calls Groq for all 75 questions, paced 20 seconds apart, and
+uses the app's eight-chunk context. See [the expanded evaluation report](eval/EXPANDED.md)
+for measured results, source provenance and limits. Earlier benchmark results remain unchanged.

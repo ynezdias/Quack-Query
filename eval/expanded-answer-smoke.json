@@ -1,0 +1,1280 @@
+{
+  "created_at": "2026-09-17T15:56:31.131138+00:00",
+  "dataset_sha256": "be6637bcb5236798d957f5eaece038e049a29a8853ac7685289e4c47f3ed831b",
+  "code_hashes": {
+    "rag.py": "2b5e813b4206e4edf73a2ccf4ee351677319e00f46a5652195b48a806b70d78b",
+    "retrieval.py": "c29e7061e8fc9789200818fe2456743556105bb94added31f239f00d6d5137cd",
+    "evaluate_expanded.py": "226cfa00335a4061448905f09aa1640b49fd5bb66e388a896d3c33a8957b088e"
+  },
+  "corpora": {
+    "synthetic": {
+      "collection": "quackquery_synthetic_416046ea2d2f44a480dc1e4a02a2e9ee",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "chunks": 22,
+      "documents": [
+        {
+          "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+          "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2026",
+          "characters": 1119
+        },
+        {
+          "filename": "02_Undergraduate_Admissions_Requirements_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/02_Undergraduate_Admissions_Requirements_2026.docx",
+          "content_hash": "eaaa495ff081b3f75e3fec6f6a6634de365ad6c0997b4ecb93332da4cf5fa15a",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2026",
+          "characters": 777
+        },
+        {
+          "filename": "03_CS_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/03_CS_Program_Handbook_2026.docx",
+          "content_hash": "a8a4f1ed199c1c21119d6b99bfea44d4ced7b29ba0fdf67606c6d40b87cb5514",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 736
+        },
+        {
+          "filename": "04_DS_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/04_DS_Program_Handbook_2026.docx",
+          "content_hash": "074448a906ab78309a3aace19ec3f4fe71fb6cd9b1f084bc86fe457fd4f78671",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 637
+        },
+        {
+          "filename": "05_Cybersecurity_Program_Handbook_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/05_Cybersecurity_Program_Handbook_2026.docx",
+          "content_hash": "8ccff87e05e5964c067f9aa50a43c945d703fdec8587f378652eae9691015f46",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 25, 2026",
+          "characters": 595
+        },
+        {
+          "filename": "06_Course_Catalog_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+          "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+          "source_type": "synthetic_test_data",
+          "publication_date": "June 15, 2026",
+          "characters": 1047
+        },
+        {
+          "filename": "07_Tuition_Fees_2025_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/07_Tuition_Fees_2025_2026.docx",
+          "content_hash": "eef1ec3d895a22b3c6fa167f1aa5c0d4b5014a24a246c5f8592aa776cad1e2ef",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 1, 2025",
+          "characters": 513
+        },
+        {
+          "filename": "08_Tuition_Fees_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/08_Tuition_Fees_2026_2027.docx",
+          "content_hash": "fa266eb938d52323015d7b548283149d539c2092f1fc58111c7a3e49d9b60422",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 1, 2026",
+          "characters": 513
+        },
+        {
+          "filename": "09_Academic_Calendar_2025_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/09_Academic_Calendar_2025_2026.docx",
+          "content_hash": "9a53c84d70878f2fa1a2cd97f7a4ec5be576f688b75a6701709978ac9b33e457",
+          "source_type": "synthetic_test_data",
+          "publication_date": "May 20, 2025",
+          "characters": 540
+        },
+        {
+          "filename": "10_Academic_Calendar_2026_2027.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/10_Academic_Calendar_2026_2027.docx",
+          "content_hash": "23733af2f7afb004209b434fe772c60e11ff064921befbcce54258638e325f89",
+          "source_type": "synthetic_test_data",
+          "publication_date": "May 20, 2026",
+          "characters": 533
+        },
+        {
+          "filename": "11_Scholarship_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/11_Scholarship_Policy_2026.docx",
+          "content_hash": "9635919983ac7560464377bed8a9e7a6c0a204fee39fc168e2d550d466619db7",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 10, 2026",
+          "characters": 624
+        },
+        {
+          "filename": "12_Assistantship_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/12_Assistantship_Policy_2026.docx",
+          "content_hash": "41ee502766524a5a1a3f3cf589247a79b7feca4ca83440500e59bf3460c99598",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 10, 2026",
+          "characters": 633
+        },
+        {
+          "filename": "13_Housing_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/13_Housing_Policy_2026.docx",
+          "content_hash": "47c10c083a40b87a64ae6e3db7f5d5ba4bfa789730cdcd2fd84fb53543512d0f",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 20, 2026",
+          "characters": 662
+        },
+        {
+          "filename": "14_Dining_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/14_Dining_Policy_2026.docx",
+          "content_hash": "200cfdb6b9f5f6a9323d65d68839e1688a61d059b5b31f7d0c855d17367b6871",
+          "source_type": "synthetic_test_data",
+          "publication_date": "July 20, 2026",
+          "characters": 497
+        },
+        {
+          "filename": "15_CS_Program_Handbook_2025.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx",
+          "content_hash": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 26, 2025",
+          "characters": 688
+        },
+        {
+          "filename": "16_Graduate_Admissions_2025.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+          "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+          "source_type": "synthetic_test_data",
+          "publication_date": "September 1, 2025",
+          "characters": 659
+        },
+        {
+          "filename": "17_Scholarship_Assistantship_FAQ_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/17_Scholarship_Assistantship_FAQ_2026.docx",
+          "content_hash": "f13ee99c83b4f25963d0855297f30a28ffd8831b251c34df261bf0c91c8a3868",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 15, 2026",
+          "characters": 704
+        },
+        {
+          "filename": "18_Student_Record_Policy_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/18_Student_Record_Policy_2026.docx",
+          "content_hash": "355145f24e0f172ff001266ef6359136574e6354bf0116d45558c868d7bf9ec8",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 5, 2026",
+          "characters": 536
+        },
+        {
+          "filename": "19_Registration_Add_Drop_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx",
+          "content_hash": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 18, 2026",
+          "characters": 597
+        },
+        {
+          "filename": "20_International_Student_Guidance_2026.docx",
+          "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/20_International_Student_Guidance_2026.docx",
+          "content_hash": "cd329962b60fe98c61fcd1d6a607ebd829a4877574a1dff40cc10c329a7d3807",
+          "source_type": "synthetic_test_data",
+          "publication_date": "August 22, 2026",
+          "characters": 609
+        }
+      ]
+    },
+    "verified": {
+      "collection": "quackquery_verified_ba71bdacec2641c5a6834badb99d3af4",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "chunks": 5,
+      "documents": [
+        {
+          "filename": "cs583_2023_2024_reviewed.txt",
+          "document_id": "verified/cs583_2023_2024_reviewed.txt",
+          "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+          "title": "Archived CS 583 catalog entry",
+          "academic_year": "2023-2024",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 639
+        },
+        {
+          "filename": "graduate_admissions_reviewed.txt",
+          "document_id": "verified/graduate_admissions_reviewed.txt",
+          "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/application-requirements",
+          "title": "Graduate admissions requirements",
+          "academic_year": "unknown",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 599
+        },
+        {
+          "filename": "graduate_tuition_2025_2026_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2025_2026_reviewed.txt",
+          "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2025 and Spring 2026",
+          "academic_year": "2025-2026",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "graduate_tuition_2026_2027_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2026_2027_reviewed.txt",
+          "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2026 and Spring 2027",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "registrar_dates_reviewed.txt",
+          "document_id": "verified/registrar_dates_reviewed.txt",
+          "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+          "title": "Registrar long-term dates",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 406
+        }
+      ]
+    }
+  },
+  "model": "openai/gpt-oss-20b",
+  "top_k": 8,
+  "answer_evaluation": true,
+  "case_count": 6,
+  "limitations": "Regression cases, not held-out accuracy. Source presence is not evidence sufficiency. Status matching is not factual correctness. Review answers against reference_answer manually, including entailment, completeness, units, scope and contradictions.",
+  "results": [
+    {
+      "id": "S018",
+      "user_question_number": 18,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Can a student take CS 583 without CS 559?",
+      "reference_answer": "An approved equivalent is allowed; do not claim an unconditional yes or no.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08919509999986985,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "18_Student_Record_Policy_2026.docx"
+      ],
+      "source_recall": 0.0,
+      "all_sources": false,
+      "reciprocal_rank": 0
+    },
+    {
+      "id": "S018",
+      "user_question_number": 18,
+      "corpus": "synthetic",
+      "category": "reasoning",
+      "question": "Can a student take CS 583 without CS 559?",
+      "reference_answer": "An approved equivalent is allowed; do not claim an unconditional yes or no.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07542199999988952,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "20_International_Student_Guidance_2026.docx",
+        "18_Student_Record_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 0.25,
+      "response": {
+        "status": "answered",
+        "message": "",
+        "claims": [
+          {
+            "text": "A student cannot register for CS\u202f583 without having completed CS\u202f559 or an approved equivalent.",
+            "evidence": [
+              {
+                "source_id": 4,
+                "quote": "Prerequisite: CS\u202f559 or an approved equivalent."
+              }
+            ]
+          }
+        ]
+      },
+      "status_correct": true,
+      "review_context": [
+        {
+          "id": "5832fa03b37f4105ac1ae015e4dfa2d476f500bcbb32a8482faebcb39922d594",
+          "text": "Computer Science Program Handbook \u2014 Synthetic Test Data\nPublication date: August 26, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nProgram: Computer Science\nAcademic year: 2025\u20132026\nThis prior synthetic version requires a core curriculum, approved electives, and a culminating requirement. Sample core courses include CS 541 Artificial Intelligence and CS 559 Machine Learning. Compared with the 2026 version, the synthetic 2025 handbook lists CS 559 as part of the core but does not list CS 583 Deep Learning as a sample core course. This document is intentionally preserved as a previous version for document-update and temporal-comparison testing.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx",
+            "filename": "15_CS_Program_Handbook_2025.docx",
+            "locator": "Document text",
+            "publication_date": "August 26, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f739549fa1912266d34847264c3edb2d5dc61a71197aee02f264f8e1610201dd",
+          "text": "Registration, Add/Drop, and Withdrawal Policy \u2014 Synthetic Test Data\nPublication date: August 18, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nStudents register for courses during the registration period assigned to their student category. Add/drop and withdrawal deadlines are term-specific and should be checked against the applicable academic calendar or registration notice. A course prerequisite must be satisfied or formally approved according to the institution's process before registration can be completed when the system enforces that prerequisite.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx",
+            "filename": "19_Registration_Add_Drop_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 18, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "78d5276dd91d5c25073b25c2149856e66f71f83d6458020e4d45e9df6a7358b5",
+          "text": "Computer Science Program Handbook \u2014 Synthetic Test Data\nPublication date: August 25, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nProgram: Computer Science\nThis handbook describes a synthetic graduate program for retrieval testing. Students should complete the required core curriculum, approved electives, and a culminating requirement as specified by their degree plan. Sample core courses: CS 541 Artificial Intelligence; CS 559 Machine Learning; CS 583 Deep Learning. A course may have prerequisites listed in the synthetic course catalog. Program requirements and course prerequisites are separate concepts: satisfying a program requirement does not automatically waive a course prerequisite.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "a8a4f1ed199c1c21119d6b99bfea44d4ced7b29ba0fdf67606c6d40b87cb5514",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/03_CS_Program_Handbook_2026.docx",
+            "filename": "03_CS_Program_Handbook_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 25, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f845afeef06b9fc9ebfbca6a3ac7c37f533bd7d3440343043c609908f3de9322",
+          "text": "Course Catalog 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: June 15, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nCourse descriptions and prerequisites:\nCS 541 \u2014 Artificial Intelligence\nDescription: Introduction to intelligent-agent concepts, search, learning, and reasoning. Prerequisite: Programming fundamentals and an introductory algorithms course. CS 559 \u2014 Machine Learning\nDescription: Supervised and unsupervised learning, model evaluation, and statistical learning concepts. Prerequisite: Linear algebra and probability/statistics. CS 583 \u2014 Deep Learning\nDescription: Neural-network architectures, optimization, representation learning, and deep-learning applications. Prerequisite: CS 559 or an approved equivalent. DS 510 \u2014 Statistical Methods\nDescription: Statistical foundations for data analysis. Prerequisite: Introductory statistics.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+            "filename": "06_Course_Catalog_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "June 15, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "e7979c9aade94c0a4a92472b3d03bef155b2b627dca90dfddce64299035c07bd",
+          "text": "Individual programs may impose additional academic prerequisites, minimum preparation, portfolio requirements, or standardized-test policies. Important: Requirements can vary by program and admission term. When requirements conflict, the program-specific requirement and the applicable admission-year document should be treated as the more specific source.",
+          "metadata": {
+            "chunk_number": 1,
+            "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+            "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "2abdcfc712211242427f3a35a405d1db78e219d96691e56b2a9d92893d47ac0d",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2025\u20132026\nGraduate applicants submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and program-specific materials where applicable. International applicants may have additional English-proficiency and immigration-document requirements. Requirements can change by program and admission term. This prior version is retained to test whether a system can distinguish current and previous admissions requirements.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+            "filename": "16_Graduate_Admissions_2025.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "2a514463d2c454a469738bfff881e9b77c0da8403eed948141ee65625bddd861",
+          "text": "International Student Academic Guidance \u2014 Synthetic Test Data\nPublication date: August 22, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nThis synthetic guidance document covers academic-planning topics for international students, including enrollment planning, document maintenance, and consultation with the designated university office when immigration-related questions arise. Immigration requirements can depend on individual circumstances and current federal rules. This document is not legal advice and should not replace official university or government guidance.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "cd329962b60fe98c61fcd1d6a607ebd829a4877574a1dff40cc10c329a7d3807",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/20_International_Student_Guidance_2026.docx",
+            "filename": "20_International_Student_Guidance_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 22, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "1042868219f36c2d9a34a5b7918ec452f9ffdebca81644300c670e6fba8e24d7",
+          "text": "Student Records and Privacy Policy \u2014 Synthetic Test Data\nPublication date: August 5, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nStudent records should be accessed and disclosed only for authorized educational or administrative purposes. Students may be required to authenticate before accessing personal academic information. This synthetic document is included to test retrieval of general student-records policy language. It does not reproduce or represent an actual university privacy policy.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "355145f24e0f172ff001266ef6359136574e6354bf0116d45558c868d7bf9ec8",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/18_Student_Record_Policy_2026.docx",
+            "filename": "18_Student_Record_Policy_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 5, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    },
+    {
+      "id": "S025",
+      "user_question_number": 25,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "How much did synthetic graduate tuition increase between 2025-2026 and 2026-2027?",
+      "reference_answer": "75 dollars per credit, from 1850 to 1925.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08845339999970747,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "20_International_Student_Guidance_2026.docx",
+        "12_Assistantship_Policy_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "S025",
+      "user_question_number": 25,
+      "corpus": "synthetic",
+      "category": "tuition",
+      "question": "How much did synthetic graduate tuition increase between 2025-2026 and 2026-2027?",
+      "reference_answer": "75 dollars per credit, from 1850 to 1925.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.08601169999974445,
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "12_Assistantship_Policy_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0,
+      "response": {
+        "status": "answered",
+        "message": "",
+        "claims": [
+          {
+            "text": "Graduate tuition increased by $75 per credit from the 2025\u20112026 academic year to the 2026\u20112027 academic year.",
+            "evidence": [
+              {
+                "source_id": 1,
+                "quote": "Graduate tuition: $1,925 per credit"
+              },
+              {
+                "source_id": 2,
+                "quote": "Graduate tuition: $1,850 per credit"
+              }
+            ]
+          }
+        ]
+      },
+      "status_correct": true,
+      "review_context": [
+        {
+          "id": "74c7f6818aa1b04a33d965485a27bdedbca4041f5a09fa9944eed43befc37915",
+          "text": "Graduate Tuition and Fee Schedule 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: July 1, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2026\u20132027\nSynthetic planning figures:\nGraduate tuition: $1,925 per credit\nGraduate technology fee: $190 per semester\nGraduate student services fee: $125 per semester\nThese figures are synthetic and exist only to test year-specific table retrieval. They must not be used for financial planning or real enrollment decisions.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "fa266eb938d52323015d7b548283149d539c2092f1fc58111c7a3e49d9b60422",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/08_Tuition_Fees_2026_2027.docx",
+            "filename": "08_Tuition_Fees_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "July 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "952c357a23484dfc67c17484102b20758287c7c81ae7ba8a7adc13da41c6d2ef",
+          "text": "Graduate Tuition and Fee Schedule 2025\u20132026 \u2014 Synthetic Test Data\nPublication date: July 1, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2025\u20132026\nSynthetic planning figures:\nGraduate tuition: $1,850 per credit\nGraduate technology fee: $180 per semester\nGraduate student services fee: $120 per semester\nThese figures are synthetic and exist only to test year-specific table retrieval. They must not be used for financial planning or real enrollment decisions.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "eef1ec3d895a22b3c6fa167f1aa5c0d4b5014a24a246c5f8592aa776cad1e2ef",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/07_Tuition_Fees_2025_2026.docx",
+            "filename": "07_Tuition_Fees_2025_2026.docx",
+            "locator": "Document text",
+            "publication_date": "July 1, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "7f1fb2d3c133ba48ec586e31ed9e91948bb2ad3f983d6d2ca9e43e5e23100182",
+          "text": "Academic Calendar 2025\u20132026 \u2014 Synthetic Test Data\nPublication date: May 20, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nFall 2025:\nClasses begin: September 2, 2025\nLast day of classes: December 12, 2025\nFinal examination period: December 15\u201319, 2025\nSpring 2026:\nClasses begin: January 20, 2026\nLast day of classes: May 1, 2026\nFinal examination period: May 4\u20138, 2026\nThe academic calendar is organized by academic year. A date question should identify the requested term before retrieving an answer.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "9a53c84d70878f2fa1a2cd97f7a4ec5be576f688b75a6701709978ac9b33e457",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/09_Academic_Calendar_2025_2026.docx",
+            "filename": "09_Academic_Calendar_2025_2026.docx",
+            "locator": "Document text",
+            "publication_date": "May 20, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "2abdcfc712211242427f3a35a405d1db78e219d96691e56b2a9d92893d47ac0d",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2025\u20132026\nGraduate applicants submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and program-specific materials where applicable. International applicants may have additional English-proficiency and immigration-document requirements. Requirements can change by program and admission term. This prior version is retained to test whether a system can distinguish current and previous admissions requirements.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+            "filename": "16_Graduate_Admissions_2025.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f0ba9a31fc0c5f9167e3a10c1d27824c5b27f98c6d97c98f803192740397be4d",
+          "text": "Academic Calendar 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: May 20, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nFall 2026:\nClasses begin: September 1, 2026\nLast day of classes: December 11, 2026\nFinal examination period: December 14\u201318, 2026\nSpring 2027:\nClasses begin: January 19, 2027\nLast day of classes: April 30, 2027\nFinal examination period: May 3\u20137, 2027\nThis is a synthetic calendar. Dates intentionally differ from the prior academic year to support temporal retrieval tests.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "23733af2f7afb004209b434fe772c60e11ff064921befbcce54258638e325f89",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/10_Academic_Calendar_2026_2027.docx",
+            "filename": "10_Academic_Calendar_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "May 20, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "480b2d8a91bbfb3b6fc10498b5520dea74cfc34279685b7c4c6a9bd2f40d5ba2",
+          "text": "Graduate Scholarship Policy \u2014 Synthetic Test Data\nPublication date: August 10, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nEligibility for the synthetic graduate scholarship requires full-time enrollment, satisfactory academic progress, and submission of the scholarship application by the stated deadline. Award continuation is reviewed each academic year. A student who falls below the synthetic academic-progress threshold may become ineligible for renewal. Scholarship eligibility and assistantship eligibility are separate categories and should not be conflated during retrieval.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "9635919983ac7560464377bed8a9e7a6c0a204fee39fc168e2d550d466619db7",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/11_Scholarship_Policy_2026.docx",
+            "filename": "11_Scholarship_Policy_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 10, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "702d6d2707b634cd4ffcec08b3b75dc44d977878423c50a072d3e3c897e6f1e0",
+          "text": "Graduate Assistantship Policy \u2014 Synthetic Test Data\nPublication date: August 10, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nSynthetic graduate assistantships may include teaching-assistant, course-assistant, research-assistant, or other approved roles. Eligibility may depend on enrollment status, academic standing, appointment availability, and departmental approval. An appointment is not guaranteed merely because a student satisfies baseline eligibility. Students receiving an assistantship must follow the duties, workload limits, and appointment dates stated in the appointment notice.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "41ee502766524a5a1a3f3cf589247a79b7feca4ca83440500e59bf3460c99598",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/12_Assistantship_Policy_2026.docx",
+            "filename": "12_Assistantship_Policy_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 10, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "4740db5e84382f650f07754ceb85d3f1486e805f6ed8305b80e0a580fa03e14b",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nPurpose: Study/testing document for a university knowledge-base retrieval system. Graduate applicants are expected to submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and any program-specific materials identified by the intended program. International applicants may additionally be asked for proof of English proficiency and immigration-related documentation after admission. Eligibility: Applicants should hold an appropriate undergraduate degree from an accredited institution or an equivalent international credential. Individual programs may impose additional academic prerequisites, minimum preparation, portfolio requirements, or standardized-test policies.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+            "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    },
+    {
+      "id": "S046",
+      "user_question_number": 46,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "When do classes start?",
+      "reference_answer": "clarify: Ask academic year and term.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.0833095000002686,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S046",
+      "user_question_number": 46,
+      "corpus": "synthetic",
+      "category": "ambiguity",
+      "question": "When do classes start?",
+      "reference_answer": "clarify: Ask academic year and term.",
+      "expected_status": "clarify",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.09533069999997679,
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null,
+      "response": {
+        "status": "unknown",
+        "message": "I don't know based on the university documents.",
+        "claims": []
+      },
+      "status_correct": false,
+      "review_context": [
+        {
+          "id": "7f1fb2d3c133ba48ec586e31ed9e91948bb2ad3f983d6d2ca9e43e5e23100182",
+          "text": "Academic Calendar 2025\u20132026 \u2014 Synthetic Test Data\nPublication date: May 20, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nFall 2025:\nClasses begin: September 2, 2025\nLast day of classes: December 12, 2025\nFinal examination period: December 15\u201319, 2025\nSpring 2026:\nClasses begin: January 20, 2026\nLast day of classes: May 1, 2026\nFinal examination period: May 4\u20138, 2026\nThe academic calendar is organized by academic year. A date question should identify the requested term before retrieving an answer.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "9a53c84d70878f2fa1a2cd97f7a4ec5be576f688b75a6701709978ac9b33e457",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/09_Academic_Calendar_2025_2026.docx",
+            "filename": "09_Academic_Calendar_2025_2026.docx",
+            "locator": "Document text",
+            "publication_date": "May 20, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f0ba9a31fc0c5f9167e3a10c1d27824c5b27f98c6d97c98f803192740397be4d",
+          "text": "Academic Calendar 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: May 20, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nFall 2026:\nClasses begin: September 1, 2026\nLast day of classes: December 11, 2026\nFinal examination period: December 14\u201318, 2026\nSpring 2027:\nClasses begin: January 19, 2027\nLast day of classes: April 30, 2027\nFinal examination period: May 3\u20137, 2027\nThis is a synthetic calendar. Dates intentionally differ from the prior academic year to support temporal retrieval tests.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "23733af2f7afb004209b434fe772c60e11ff064921befbcce54258638e325f89",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/10_Academic_Calendar_2026_2027.docx",
+            "filename": "10_Academic_Calendar_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "May 20, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f739549fa1912266d34847264c3edb2d5dc61a71197aee02f264f8e1610201dd",
+          "text": "Registration, Add/Drop, and Withdrawal Policy \u2014 Synthetic Test Data\nPublication date: August 18, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nStudents register for courses during the registration period assigned to their student category. Add/drop and withdrawal deadlines are term-specific and should be checked against the applicable academic calendar or registration notice. A course prerequisite must be satisfied or formally approved according to the institution's process before registration can be completed when the system enforces that prerequisite.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx",
+            "filename": "19_Registration_Add_Drop_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 18, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f845afeef06b9fc9ebfbca6a3ac7c37f533bd7d3440343043c609908f3de9322",
+          "text": "Course Catalog 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: June 15, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nCourse descriptions and prerequisites:\nCS 541 \u2014 Artificial Intelligence\nDescription: Introduction to intelligent-agent concepts, search, learning, and reasoning. Prerequisite: Programming fundamentals and an introductory algorithms course. CS 559 \u2014 Machine Learning\nDescription: Supervised and unsupervised learning, model evaluation, and statistical learning concepts. Prerequisite: Linear algebra and probability/statistics. CS 583 \u2014 Deep Learning\nDescription: Neural-network architectures, optimization, representation learning, and deep-learning applications. Prerequisite: CS 559 or an approved equivalent. DS 510 \u2014 Statistical Methods\nDescription: Statistical foundations for data analysis. Prerequisite: Introductory statistics.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+            "filename": "06_Course_Catalog_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "June 15, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "acda1dc6fb670c8ba340d520285e628fa60cd14e53957fa2829950ffa6a39ded",
+          "text": "Undergraduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nPurpose: Study/testing document for applicant-type retrieval. First-year applicants generally submit an online application, secondary-school academic records, required essays or responses, and other materials specified for the admission cycle. Transfer applicants submit postsecondary transcripts and transfer-specific information in addition to the standard application materials. Applicants should verify whether a requirement applies to first-year, transfer, international, or other applicant categories. The same material should not be assumed to have identical requirements across applicant types.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "eaaa495ff081b3f75e3fec6f6a6634de365ad6c0997b4ecb93332da4cf5fa15a",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/02_Undergraduate_Admissions_Requirements_2026.docx",
+            "filename": "02_Undergraduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "e7979c9aade94c0a4a92472b3d03bef155b2b627dca90dfddce64299035c07bd",
+          "text": "Individual programs may impose additional academic prerequisites, minimum preparation, portfolio requirements, or standardized-test policies. Important: Requirements can vary by program and admission term. When requirements conflict, the program-specific requirement and the applicable admission-year document should be treated as the more specific source.",
+          "metadata": {
+            "chunk_number": 1,
+            "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+            "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "2abdcfc712211242427f3a35a405d1db78e219d96691e56b2a9d92893d47ac0d",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2025\u20132026\nGraduate applicants submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and program-specific materials where applicable. International applicants may have additional English-proficiency and immigration-document requirements. Requirements can change by program and admission term. This prior version is retained to test whether a system can distinguish current and previous admissions requirements.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+            "filename": "16_Graduate_Admissions_2025.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "5832fa03b37f4105ac1ae015e4dfa2d476f500bcbb32a8482faebcb39922d594",
+          "text": "Computer Science Program Handbook \u2014 Synthetic Test Data\nPublication date: August 26, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nProgram: Computer Science\nAcademic year: 2025\u20132026\nThis prior synthetic version requires a core curriculum, approved electives, and a culminating requirement. Sample core courses include CS 541 Artificial Intelligence and CS 559 Machine Learning. Compared with the 2026 version, the synthetic 2025 handbook lists CS 559 as part of the core but does not list CS 583 Deep Learning as a sample core course. This document is intentionally preserved as a previous version for document-update and temporal-comparison testing.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx",
+            "filename": "15_CS_Program_Handbook_2025.docx",
+            "locator": "Document text",
+            "publication_date": "August 26, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    },
+    {
+      "id": "S052",
+      "user_question_number": 52,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the prerequisite for CS 700?",
+      "reference_answer": "unknown: Course absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.08840230000032534,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null
+    },
+    {
+      "id": "S052",
+      "user_question_number": 52,
+      "corpus": "synthetic",
+      "category": "unknown",
+      "question": "What is the prerequisite for CS 700?",
+      "reference_answer": "unknown: Course absent.",
+      "expected_status": "unknown",
+      "expected_sources": [],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.07249350000029153,
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "source_recall": null,
+      "all_sources": null,
+      "reciprocal_rank": null,
+      "response": {
+        "status": "unknown",
+        "message": "I don't know based on the university documents.",
+        "claims": []
+      },
+      "status_correct": true,
+      "review_context": [
+        {
+          "id": "5832fa03b37f4105ac1ae015e4dfa2d476f500bcbb32a8482faebcb39922d594",
+          "text": "Computer Science Program Handbook \u2014 Synthetic Test Data\nPublication date: August 26, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nProgram: Computer Science\nAcademic year: 2025\u20132026\nThis prior synthetic version requires a core curriculum, approved electives, and a culminating requirement. Sample core courses include CS 541 Artificial Intelligence and CS 559 Machine Learning. Compared with the 2026 version, the synthetic 2025 handbook lists CS 559 as part of the core but does not list CS 583 Deep Learning as a sample core course. This document is intentionally preserved as a previous version for document-update and temporal-comparison testing.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx",
+            "filename": "15_CS_Program_Handbook_2025.docx",
+            "locator": "Document text",
+            "publication_date": "August 26, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f845afeef06b9fc9ebfbca6a3ac7c37f533bd7d3440343043c609908f3de9322",
+          "text": "Course Catalog 2026\u20132027 \u2014 Synthetic Test Data\nPublication date: June 15, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nCourse descriptions and prerequisites:\nCS 541 \u2014 Artificial Intelligence\nDescription: Introduction to intelligent-agent concepts, search, learning, and reasoning. Prerequisite: Programming fundamentals and an introductory algorithms course. CS 559 \u2014 Machine Learning\nDescription: Supervised and unsupervised learning, model evaluation, and statistical learning concepts. Prerequisite: Linear algebra and probability/statistics. CS 583 \u2014 Deep Learning\nDescription: Neural-network architectures, optimization, representation learning, and deep-learning applications. Prerequisite: CS 559 or an approved equivalent. DS 510 \u2014 Statistical Methods\nDescription: Statistical foundations for data analysis. Prerequisite: Introductory statistics.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+            "filename": "06_Course_Catalog_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "June 15, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "78d5276dd91d5c25073b25c2149856e66f71f83d6458020e4d45e9df6a7358b5",
+          "text": "Computer Science Program Handbook \u2014 Synthetic Test Data\nPublication date: August 25, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nProgram: Computer Science\nThis handbook describes a synthetic graduate program for retrieval testing. Students should complete the required core curriculum, approved electives, and a culminating requirement as specified by their degree plan. Sample core courses: CS 541 Artificial Intelligence; CS 559 Machine Learning; CS 583 Deep Learning. A course may have prerequisites listed in the synthetic course catalog. Program requirements and course prerequisites are separate concepts: satisfying a program requirement does not automatically waive a course prerequisite.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "a8a4f1ed199c1c21119d6b99bfea44d4ced7b29ba0fdf67606c6d40b87cb5514",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/03_CS_Program_Handbook_2026.docx",
+            "filename": "03_CS_Program_Handbook_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 25, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "a04dca65dc48d06e5f236968b9c72bcbe0a2ac897422a018cea17490513902a2",
+          "text": "DS 510 \u2014 Statistical Methods\nDescription: Statistical foundations for data analysis. Prerequisite: Introductory statistics. DS 550 \u2014 Applied Machine Learning\nDescription: Applied modeling and evaluation for data-science problems. Prerequisite: DS 510 or an approved equivalent.",
+          "metadata": {
+            "chunk_number": 1,
+            "content_hash": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx",
+            "filename": "06_Course_Catalog_2026_2027.docx",
+            "locator": "Document text",
+            "publication_date": "June 15, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "f739549fa1912266d34847264c3edb2d5dc61a71197aee02f264f8e1610201dd",
+          "text": "Registration, Add/Drop, and Withdrawal Policy \u2014 Synthetic Test Data\nPublication date: August 18, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nStudents register for courses during the registration period assigned to their student category. Add/drop and withdrawal deadlines are term-specific and should be checked against the applicable academic calendar or registration notice. A course prerequisite must be satisfied or formally approved according to the institution's process before registration can be completed when the system enforces that prerequisite.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx",
+            "filename": "19_Registration_Add_Drop_2026.docx",
+            "locator": "Document text",
+            "publication_date": "August 18, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "e7979c9aade94c0a4a92472b3d03bef155b2b627dca90dfddce64299035c07bd",
+          "text": "Individual programs may impose additional academic prerequisites, minimum preparation, portfolio requirements, or standardized-test policies. Important: Requirements can vary by program and admission term. When requirements conflict, the program-specific requirement and the applicable admission-year document should be treated as the more specific source.",
+          "metadata": {
+            "chunk_number": 1,
+            "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+            "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "4740db5e84382f650f07754ceb85d3f1486e805f6ed8305b80e0a580fa03e14b",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2026\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nPurpose: Study/testing document for a university knowledge-base retrieval system. Graduate applicants are expected to submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and any program-specific materials identified by the intended program. International applicants may additionally be asked for proof of English proficiency and immigration-related documentation after admission. Eligibility: Applicants should hold an appropriate undergraduate degree from an accredited institution or an equivalent international credential. Individual programs may impose additional academic prerequisites, minimum preparation, portfolio requirements, or standardized-test policies.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx",
+            "filename": "01_Graduate_Admissions_Requirements_2026.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2026",
+            "source_type": "synthetic_test_data"
+          }
+        },
+        {
+          "id": "2abdcfc712211242427f3a35a405d1db78e219d96691e56b2a9d92893d47ac0d",
+          "text": "Graduate Admissions Requirements \u2014 Synthetic Test Data\nPublication date: September 1, 2025\nSYNTHETIC TEST DATA \u2014 NOT AN OFFICIAL STEVENS INSTITUTE OF TECHNOLOGY DOCUMENT\nAcademic year: 2025\u20132026\nGraduate applicants submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and program-specific materials where applicable. International applicants may have additional English-proficiency and immigration-document requirements. Requirements can change by program and admission term. This prior version is retained to test whether a system can distinguish current and previous admissions requirements.",
+          "metadata": {
+            "chunk_number": 0,
+            "content_hash": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+            "document_id": "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx",
+            "filename": "16_Graduate_Admissions_2025.docx",
+            "locator": "Document text",
+            "publication_date": "September 1, 2025",
+            "source_type": "synthetic_test_data"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    },
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.09115340000016658,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0825089999998454,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0,
+      "error": "APIConnectionError",
+      "status_correct": false
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.4552131999998892,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.2141508999998223,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0,
+      "error": "APIConnectionError",
+      "status_correct": false
+    }
+  ],
+  "completed_cases": 6,
+  "summary": {
+    "synthetic": {
+      "semantic": {
+        "rows": 4,
+        "source_recall": {
+          "count": 2,
+          "mean": 0.5
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 0.5
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 0.5
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      },
+      "hybrid": {
+        "rows": 4,
+        "source_recall": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 0.625
+        },
+        "status_correct": {
+          "count": 4,
+          "mean": 0.75
+        },
+        "generation_errors": 0
+      }
+    },
+    "verified": {
+      "semantic": {
+        "rows": 2,
+        "source_recall": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      },
+      "hybrid": {
+        "rows": 2,
+        "source_recall": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "status_correct": {
+          "count": 2,
+          "mean": 0
+        },
+        "generation_errors": 2
+      }
+    }
+  },
+  "by_category": {
+    "ambiguity": {
+      "rows": 1,
+      "source_recall": {
+        "count": 0,
+        "mean": null
+      },
+      "all_sources": {
+        "count": 0,
+        "mean": null
+      },
+      "reciprocal_rank": {
+        "count": 0,
+        "mean": null
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 0
+      },
+      "generation_errors": 0
+    },
+    "calendar": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 0
+      },
+      "generation_errors": 1
+    },
+    "courses": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 0
+      },
+      "generation_errors": 1
+    },
+    "reasoning": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 0.25
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 1
+      },
+      "generation_errors": 0
+    },
+    "tuition": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 1
+      },
+      "generation_errors": 0
+    },
+    "unknown": {
+      "rows": 1,
+      "source_recall": {
+        "count": 0,
+        "mean": null
+      },
+      "all_sources": {
+        "count": 0,
+        "mean": null
+      },
+      "reciprocal_rank": {
+        "count": 0,
+        "mean": null
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 1
+      },
+      "generation_errors": 0
+    }
+  }
+}

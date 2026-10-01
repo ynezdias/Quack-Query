@@ -1,0 +1,944 @@
+[
+  {
+    "id": "S001",
+    "user_question_number": 1,
+    "corpus": "synthetic",
+    "category": "admissions",
+    "question": "What materials are required for synthetic graduate admissions?",
+    "reference_answer": "Application, fee, transcripts, resume/CV, statement of purpose and program-specific materials.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "01_Graduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S002",
+    "user_question_number": 2,
+    "corpus": "synthetic",
+    "category": "admissions",
+    "question": "What additional requirements may apply to international graduate applicants?",
+    "reference_answer": "English-language evidence and immigration documentation after admission; requirements may vary.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "01_Graduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S003",
+    "user_question_number": 3,
+    "corpus": "synthetic",
+    "category": "admissions",
+    "question": "What is the difference between first-year and transfer undergraduate applicants?",
+    "reference_answer": "Secondary-school records versus postsecondary transcripts and transfer-specific information.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "02_Undergraduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S004",
+    "user_question_number": 4,
+    "corpus": "synthetic",
+    "category": "admissions",
+    "question": "Do all applicant types have identical requirements?",
+    "reference_answer": "No; distinguish first-year, transfer and international applicants.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "02_Undergraduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S005",
+    "user_question_number": 5,
+    "corpus": "synthetic",
+    "category": "admissions",
+    "question": "Can program-specific requirements override general admissions requirements?",
+    "reference_answer": "Use applicable program-specific requirements and entry term; do not assume a universal override rule.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "01_Graduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S006",
+    "user_question_number": 6,
+    "corpus": "synthetic",
+    "category": "handbooks",
+    "question": "Which sample core courses are listed in the 2026 Computer Science handbook?",
+    "reference_answer": "CS 541, CS 559 and CS 583.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "03_CS_Program_Handbook_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S007",
+    "user_question_number": 7,
+    "corpus": "synthetic",
+    "category": "handbooks",
+    "question": "Is CS 583 listed in the 2025 CS handbook?",
+    "reference_answer": "Mentioned, but explicitly not a sample core course; distinguish a mention from a core requirement.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "15_CS_Program_Handbook_2025.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S008",
+    "user_question_number": 8,
+    "corpus": "synthetic",
+    "category": "versions",
+    "question": "What is the difference between the 2025 and 2026 CS handbooks?",
+    "reference_answer": "CS 583 is added to the sample core list in 2026; CS 541 and CS 559 remain.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "15_CS_Program_Handbook_2025.docx",
+      "03_CS_Program_Handbook_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S009",
+    "user_question_number": 9,
+    "corpus": "synthetic",
+    "category": "handbooks",
+    "question": "What courses are mentioned in the Data Science handbook?",
+    "reference_answer": "DS 510, DS 520 and DS 550.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "04_DS_Program_Handbook_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S010",
+    "user_question_number": 10,
+    "corpus": "synthetic",
+    "category": "handbooks",
+    "question": "Which handbook contains CY 560 Secure Software?",
+    "reference_answer": "Cybersecurity 2026.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "05_Cybersecurity_Program_Handbook_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S011",
+    "user_question_number": 11,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "Are program requirements the same as course prerequisites?",
+    "reference_answer": "No; a program requirement does not waive a catalog prerequisite.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "03_CS_Program_Handbook_2026.docx",
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S012",
+    "user_question_number": 12,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "What is the prerequisite for CS 559?",
+    "reference_answer": "Linear algebra and probability/statistics.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S013",
+    "user_question_number": 13,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "What is the prerequisite for CS 583?",
+    "reference_answer": "CS 559 or an approved equivalent.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S014",
+    "user_question_number": 14,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "What does CS 541 cover?",
+    "reference_answer": "Search, learning and reasoning in artificial intelligence.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S015",
+    "user_question_number": 15,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "Which course discusses neural-network architectures?",
+    "reference_answer": "CS 583 Deep Learning.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S016",
+    "user_question_number": 16,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "What is the prerequisite for DS 550?",
+    "reference_answer": "DS 510 or an approved equivalent.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S017",
+    "user_question_number": 17,
+    "corpus": "synthetic",
+    "category": "courses",
+    "question": "Which courses require statistics knowledge?",
+    "reference_answer": "CS 559 requires probability/statistics; DS 510 requires introductory statistics. DS 550 has a course prerequisite, not an identical direct statistics requirement.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S018",
+    "user_question_number": 18,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "Can a student take CS 583 without CS 559?",
+    "reference_answer": "An approved equivalent is allowed; do not claim an unconditional yes or no.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S019",
+    "user_question_number": 19,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "A student completed CS 559. Which advanced course can they take next?",
+    "reference_answer": "CS 583 prerequisite is met; enrollment or admission is not guaranteed.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S020",
+    "user_question_number": 20,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "A student knows programming but not linear algebra. Can they take CS 559?",
+    "reference_answer": "Programming alone does not meet the stated linear algebra and probability/statistics prerequisites.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S021",
+    "user_question_number": 21,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "Which document should answer prerequisite questions: handbook or catalog?",
+    "reference_answer": "Course catalog; the handbook describes program requirements.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "03_CS_Program_Handbook_2026.docx",
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S022",
+    "user_question_number": 22,
+    "corpus": "synthetic",
+    "category": "reasoning",
+    "question": "Does completing a program requirement automatically satisfy prerequisites?",
+    "reference_answer": "No; check the separate catalog prerequisites.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "03_CS_Program_Handbook_2026.docx",
+      "06_Course_Catalog_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S023",
+    "user_question_number": 23,
+    "corpus": "synthetic",
+    "category": "tuition",
+    "question": "What was synthetic graduate tuition in 2025-2026?",
+    "reference_answer": "1850 dollars per credit.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "07_Tuition_Fees_2025_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S024",
+    "user_question_number": 24,
+    "corpus": "synthetic",
+    "category": "tuition",
+    "question": "What was synthetic graduate tuition in 2026-2027?",
+    "reference_answer": "1925 dollars per credit.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "08_Tuition_Fees_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S025",
+    "user_question_number": 25,
+    "corpus": "synthetic",
+    "category": "tuition",
+    "question": "How much did synthetic graduate tuition increase between 2025-2026 and 2026-2027?",
+    "reference_answer": "75 dollars per credit, from 1850 to 1925.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "07_Tuition_Fees_2025_2026.docx",
+      "08_Tuition_Fees_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S026",
+    "user_question_number": 26,
+    "corpus": "synthetic",
+    "category": "tuition",
+    "question": "What was the technology fee in 2026-2027?",
+    "reference_answer": "190 dollars per semester.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "08_Tuition_Fees_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S027",
+    "user_question_number": 27,
+    "corpus": "synthetic",
+    "category": "tuition",
+    "question": "Compare all fees between 2025-2026 and 2026-2027.",
+    "reference_answer": "Technology 180 to 190 (+10); student services 120 to 125 (+5), per semester. Tuition 1850 to 1925 (+75) per credit; preserve units.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "07_Tuition_Fees_2025_2026.docx",
+      "08_Tuition_Fees_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S028",
+    "user_question_number": 28,
+    "corpus": "synthetic",
+    "category": "calendar",
+    "question": "When did Fall 2026 classes begin?",
+    "reference_answer": "September 1, 2026.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "10_Academic_Calendar_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S029",
+    "user_question_number": 29,
+    "corpus": "synthetic",
+    "category": "calendar",
+    "question": "When did Spring 2027 classes begin?",
+    "reference_answer": "January 19, 2027.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "10_Academic_Calendar_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S030",
+    "user_question_number": 30,
+    "corpus": "synthetic",
+    "category": "calendar",
+    "question": "What was the final exam period in Fall 2025?",
+    "reference_answer": "December 15-19, 2025.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "09_Academic_Calendar_2025_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S031",
+    "user_question_number": 31,
+    "corpus": "synthetic",
+    "category": "calendar",
+    "question": "What are the differences between the 2025-2026 and 2026-2027 calendars?",
+    "reference_answer": "Compare fall and spring starts, last class days and exam ranges with explicit years; all six events per calendar.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "09_Academic_Calendar_2025_2026.docx",
+      "10_Academic_Calendar_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S032",
+    "user_question_number": 32,
+    "corpus": "synthetic",
+    "category": "calendar",
+    "question": "When is the last day of classes in Spring 2027?",
+    "reference_answer": "April 30, 2027 in the synthetic calendar.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "10_Academic_Calendar_2026_2027.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S033",
+    "user_question_number": 33,
+    "corpus": "synthetic",
+    "category": "funding",
+    "question": "Does scholarship eligibility guarantee an assistantship?",
+    "reference_answer": "No; separate programs with availability and department approval.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "17_Scholarship_Assistantship_FAQ_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S034",
+    "user_question_number": 34,
+    "corpus": "synthetic",
+    "category": "funding",
+    "question": "Does assistantship eligibility guarantee an appointment?",
+    "reference_answer": "No; availability and department approval still apply.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "12_Assistantship_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S035",
+    "user_question_number": 35,
+    "corpus": "synthetic",
+    "category": "funding",
+    "question": "What conditions affect scholarship renewal?",
+    "reference_answer": "Annual review and satisfactory academic progress; do not invent a numeric GPA cutoff.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "11_Scholarship_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S036",
+    "user_question_number": 36,
+    "corpus": "synthetic",
+    "category": "funding",
+    "question": "Are scholarships and assistantships the same thing?",
+    "reference_answer": "No, separate programs with different conditions.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "17_Scholarship_Assistantship_FAQ_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S037",
+    "user_question_number": 37,
+    "corpus": "synthetic",
+    "category": "funding",
+    "question": "Which document should answer assistantship questions?",
+    "reference_answer": "Assistantship Policy; individual appointment notice controls specific duties and dates.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "12_Assistantship_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S038",
+    "user_question_number": 38,
+    "corpus": "synthetic",
+    "category": "housing",
+    "question": "Does housing eligibility guarantee housing?",
+    "reference_answer": "No; availability and deadlines affect assignment.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "13_Housing_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S039",
+    "user_question_number": 39,
+    "corpus": "synthetic",
+    "category": "housing",
+    "question": "How are meal plans determined?",
+    "reference_answer": "Student category and housing arrangement; consult applicable plan terms.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "14_Dining_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S040",
+    "user_question_number": 40,
+    "corpus": "synthetic",
+    "category": "housing",
+    "question": "Can dining rules change across academic years?",
+    "reference_answer": "Yes, consult the applicable year's rules.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "14_Dining_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S041",
+    "user_question_number": 41,
+    "corpus": "synthetic",
+    "category": "housing",
+    "question": "Which document should answer contract-specific housing questions?",
+    "reference_answer": "The housing agreement, not a generic policy summary.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "13_Housing_Policy_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S042",
+    "user_question_number": 42,
+    "corpus": "synthetic",
+    "category": "versions",
+    "question": "What changed between the 2025 and 2026 CS handbooks?",
+    "reference_answer": "CS 583 becomes a sample core course in 2026.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "15_CS_Program_Handbook_2025.docx",
+      "03_CS_Program_Handbook_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S043",
+    "user_question_number": 43,
+    "corpus": "synthetic",
+    "category": "versions",
+    "question": "Which document is newer: Graduate Admissions 2025 or Graduate Admissions 2026?",
+    "reference_answer": "2026 is newer; recency alone does not supersede a requested historical year.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "16_Graduate_Admissions_2025.docx",
+      "01_Graduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S044",
+    "user_question_number": 44,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "If two documents conflict, which should be preferred?",
+    "reference_answer": "clarify: Ask which documents, topic and applicable year; never universally prefer the newest.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S045",
+    "user_question_number": 45,
+    "corpus": "synthetic",
+    "category": "versions",
+    "question": "Should a program-specific document override a general document?",
+    "reference_answer": "Apply the relevant program and entry-term requirements; do not infer universal authority across unrelated policies.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "01_Graduate_Admissions_Requirements_2026.docx"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "S046",
+    "user_question_number": 46,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "When do classes start?",
+    "reference_answer": "clarify: Ask academic year and term.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S047",
+    "user_question_number": 47,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "What is tuition?",
+    "reference_answer": "clarify: Ask academic year and relevant student/program scope.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S048",
+    "user_question_number": 48,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "What are the requirements?",
+    "reference_answer": "clarify: Ask applicant type or program.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S049",
+    "user_question_number": 49,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "What are the fees?",
+    "reference_answer": "clarify: Ask academic year and fee/student scope.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S050",
+    "user_question_number": 50,
+    "corpus": "synthetic",
+    "category": "ambiguity",
+    "question": "What handbook are you referring to?",
+    "reference_answer": "clarify: Ask CS, Data Science or Cybersecurity; no prior conversation given.",
+    "expected_status": "clarify",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S051",
+    "user_question_number": 51,
+    "corpus": "synthetic",
+    "category": "unknown",
+    "question": "What is the synthetic MBA tuition?",
+    "reference_answer": "unknown: No MBA-specific rate is provided; do not assert generic graduate tuition is MBA tuition.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S052",
+    "user_question_number": 52,
+    "corpus": "synthetic",
+    "category": "unknown",
+    "question": "What is the prerequisite for CS 700?",
+    "reference_answer": "unknown: Course absent.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S053",
+    "user_question_number": 53,
+    "corpus": "synthetic",
+    "category": "unknown",
+    "question": "What is the housing deposit amount?",
+    "reference_answer": "unknown: Amount absent.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S054",
+    "user_question_number": 54,
+    "corpus": "synthetic",
+    "category": "unknown",
+    "question": "What is the dining hall closing time?",
+    "reference_answer": "unknown: Hours absent.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "S055",
+    "user_question_number": 55,
+    "corpus": "synthetic",
+    "category": "unknown",
+    "question": "What is the GPA requirement for scholarships?",
+    "reference_answer": "unknown: Numeric cutoff absent; distinguish qualitative academic standing.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  },
+  {
+    "id": "V001",
+    "corpus": "verified",
+    "category": "admissions",
+    "question": "What is the graduate application fee?",
+    "reference_answer": "60 dollars, nonrefundable.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_admissions_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V002",
+    "corpus": "verified",
+    "category": "admissions",
+    "question": "How long should the graduate statement of purpose be?",
+    "reference_answer": "500-1000 words.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_admissions_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V003",
+    "corpus": "verified",
+    "category": "admissions",
+    "question": "How many recommendations are generally required for graduate applications?",
+    "reference_answer": "Most require two; some PhD programs require three; program-specific qualifications matter.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_admissions_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V004",
+    "corpus": "verified",
+    "category": "admissions",
+    "question": "Can I apply with unofficial transcripts?",
+    "reference_answer": "Yes for application; official transcripts are required before classes.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_admissions_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V005",
+    "corpus": "verified",
+    "category": "admissions",
+    "question": "Must I include transcripts from an institution where I earned no degree?",
+    "reference_answer": "Yes, every postsecondary institution attended.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_admissions_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V006",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "What is graduate tuition for 9-12 credits in fall 2025?",
+    "reference_answer": "22110 dollars per semester.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2025_2026_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V007",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "What is graduate tuition for 9-12 credits in fall 2026?",
+    "reference_answer": "22995 dollars per semester.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2026_2027_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V008",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "What is the graduate per-credit rate below nine credits for 2025-2026?",
+    "reference_answer": "1993 dollars per credit.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2025_2026_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V009",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "What is the graduate per-credit rate below nine credits for 2026-2027?",
+    "reference_answer": "2152 dollars per credit.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2026_2027_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V010",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "Compare graduate tuition for 9-12 credits in 2025-2026 and 2026-2027.",
+    "reference_answer": "22110 to 22995 dollars per semester; increase 885.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2025_2026_reviewed.txt",
+      "graduate_tuition_2026_2027_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V011",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "How much did the graduate per-credit rate below nine credits increase from 2025-2026 to 2026-2027?",
+    "reference_answer": "1993 to 2152; increase 159 dollars per credit.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2025_2026_reviewed.txt",
+      "graduate_tuition_2026_2027_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V012",
+    "corpus": "verified",
+    "category": "tuition",
+    "question": "What are full-time and part-time graduate general service fees in 2026-2027?",
+    "reference_answer": "715 and 470 dollars per semester, respectively.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "graduate_tuition_2026_2027_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V013",
+    "corpus": "verified",
+    "category": "calendar",
+    "question": "When do Fall 2026 classes begin?",
+    "reference_answer": "September 1, 2026.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "registrar_dates_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V014",
+    "corpus": "verified",
+    "category": "calendar",
+    "question": "When is the last day of Fall 2026 classes?",
+    "reference_answer": "December 14, 2026; not the synthetic December 11.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "registrar_dates_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V015",
+    "corpus": "verified",
+    "category": "calendar",
+    "question": "When do Spring 2027 classes begin?",
+    "reference_answer": "January 19, 2027.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "registrar_dates_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V016",
+    "corpus": "verified",
+    "category": "calendar",
+    "question": "When is the last day of Spring 2027 classes?",
+    "reference_answer": "May 5, 2027; not the synthetic April 30.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "registrar_dates_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V017",
+    "corpus": "verified",
+    "category": "courses",
+    "question": "How many credits was CS 583 in the archived 2023-2024 catalog?",
+    "reference_answer": "Three credits; historical scope.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "cs583_2023_2024_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V018",
+    "corpus": "verified",
+    "category": "courses",
+    "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+    "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "cs583_2023_2024_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V019",
+    "corpus": "verified",
+    "category": "versions",
+    "question": "Does the archived CS 583 entry prove the current prerequisite?",
+    "reference_answer": "No; 2023-2024 archived evidence does not establish current requirements.",
+    "expected_status": "answered",
+    "expected_sources": [
+      "cs583_2023_2024_reviewed.txt"
+    ],
+    "split": "regression"
+  },
+  {
+    "id": "V020",
+    "corpus": "verified",
+    "category": "unknown",
+    "question": "What is my current GPA?",
+    "reference_answer": "unknown: No personal records are provided.",
+    "expected_status": "unknown",
+    "expected_sources": [],
+    "split": "regression"
+  }
+]

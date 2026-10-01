@@ -1,6 +1,8 @@
 """Reproducible retrieval evaluation; --answers optionally calls Groq."""
 import argparse
+import hashlib
 import json
+import os
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -10,12 +12,13 @@ from src.knowledge import ROOT, read_manifest
 from src.rag import retrieve_chunks, generate_response, normalize, response_text
 
 
-def evaluate(split="all", answers=False, output=None):
+def evaluate(split="all", answers=False, output=None, delay=20):
     cases = json.loads((ROOT / "eval/questions.json").read_text(encoding="utf-8"))
     cases = [case for case in cases if split == "all" or case["split"] == split]
     # Warm up model and database; report steady-state retrieval times separately.
     retrieve_chunks("warmup", top_k=3)
     results = []
+    last_request = None
     for case in cases:
         for mode in ("semantic", "hybrid"):
             if not case["expected_sources"] and not answers:
@@ -32,7 +35,10 @@ def evaluate(split="all", answers=False, output=None):
                    "all_sources_at_3": expected.issubset(names) if expected else None,
                    "reciprocal_rank": next((1 / (i+1) for i, name in enumerate(names) if name in expected), 0) if expected else None,
                    "evidence_coverage_at_3": sum(normalize(fact).lower() in evidence for fact in case["required_facts"]) / len(case["required_facts"]) if case["required_facts"] else None}
-            if answers:
+            if answers and mode == "hybrid":
+                if last_request is not None:
+                    time.sleep(max(0, delay - (time.perf_counter() - last_request)))
+                last_request = time.perf_counter()
                 start = time.perf_counter()
                 try:
                     response = generate_response(case["question"], chunks)
@@ -45,19 +51,21 @@ def evaluate(split="all", answers=False, output=None):
                     row["status_correct"] = False
                 row["generation_seconds"] = time.perf_counter() - start
             results.append(row)
+        print(f"Evaluated {case['id']}", flush=True)
     summaries = {}
     for mode in ("semantic", "hybrid"):
         selected = [row for row in results if row["mode"] == mode]
         metrics = ("source_recall_at_3", "all_sources_at_3", "reciprocal_rank", "evidence_coverage_at_3", "seconds")
         summaries[mode] = {metric: mean(values) for metric in metrics
                            if (values := [r[metric] for r in selected if r.get(metric) is not None])}
-        if answers:
+        if answers and mode == "hybrid":
             summaries[mode]["status_accuracy"] = mean(r["status_correct"] for r in selected)
             summaries[mode]["generation_errors"] = sum("error" in r for r in selected)
     report = {"created_at": datetime.now(timezone.utc).isoformat(), "split": split,
               "collection": read_manifest()["synthetic"]["collection"],
               "corpus_hashes": {d["document_id"]: d["content_hash"] for d in read_manifest()["synthetic"]["documents"]},
-              "answer_evaluation": answers, "case_count": len(cases), "summary": summaries, "results": results}
+              "rag_code_sha256": hashlib.sha256((ROOT / "src/rag.py").read_bytes()).hexdigest(),
+              "answer_evaluation": answers, "model": os.getenv("GROQ_MODEL", "openai/gpt-oss-20b"), "request_interval_seconds": delay if answers else None, "case_count": len(cases), "summary": summaries, "results": results}
     destination = Path(output) if output else ROOT / "eval/results.json"
     destination.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(summaries, indent=2))
@@ -69,5 +77,6 @@ if __name__ == "__main__":
     parser.add_argument("--split", choices=("all", "development", "test"), default="all")
     parser.add_argument("--answers", action="store_true")
     parser.add_argument("--output")
+    parser.add_argument("--delay", type=float, default=20, help="Minimum seconds between generation requests")
     args = parser.parse_args()
-    evaluate(args.split, args.answers, args.output)
+    evaluate(args.split, args.answers, args.output, max(0, args.delay))

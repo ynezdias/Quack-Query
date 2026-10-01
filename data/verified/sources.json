@@ -1,0 +1,52 @@
+{
+  "graduate_admissions_reviewed.txt": {
+    "source_url": "https://www.stevens.edu/application-requirements",
+    "title": "Graduate admissions requirements",
+    "academic_year": "unknown",
+    "verified_at": "2026-09-17",
+    "publication_date": "unknown",
+    "source_type": "verified_official_summary",
+    "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+    "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed."
+  },
+  "graduate_tuition_2025_2026_reviewed.txt": {
+    "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+    "title": "Graduate tuition: Fall 2025 and Spring 2026",
+    "academic_year": "2025-2026",
+    "verified_at": "2026-09-17",
+    "publication_date": "unknown",
+    "source_type": "verified_official_summary",
+    "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+    "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed."
+  },
+  "graduate_tuition_2026_2027_reviewed.txt": {
+    "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+    "title": "Graduate tuition: Fall 2026 and Spring 2027",
+    "academic_year": "2026-2027",
+    "verified_at": "2026-09-17",
+    "publication_date": "unknown",
+    "source_type": "verified_official_summary",
+    "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+    "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed."
+  },
+  "registrar_dates_reviewed.txt": {
+    "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+    "title": "Registrar long-term dates",
+    "academic_year": "2026-2027",
+    "verified_at": "2026-09-17",
+    "publication_date": "unknown",
+    "source_type": "verified_official_summary",
+    "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+    "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed."
+  },
+  "cs583_2023_2024_reviewed.txt": {
+    "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+    "title": "Archived CS 583 catalog entry",
+    "academic_year": "2023-2024",
+    "verified_at": "2026-09-17",
+    "publication_date": "unknown",
+    "source_type": "verified_official_summary",
+    "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+    "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed."
+  }
+}

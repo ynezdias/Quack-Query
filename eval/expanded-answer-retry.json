@@ -1,0 +1,501 @@
+{
+  "created_at": "2026-09-17T16:39:51.315138+00:00",
+  "dataset_sha256": "be6637bcb5236798d957f5eaece038e049a29a8853ac7685289e4c47f3ed831b",
+  "code_hashes": {
+    "rag.py": "2b5e813b4206e4edf73a2ccf4ee351677319e00f46a5652195b48a806b70d78b",
+    "retrieval.py": "c29e7061e8fc9789200818fe2456743556105bb94added31f239f00d6d5137cd",
+    "evaluate_expanded.py": "226cfa00335a4061448905f09aa1640b49fd5bb66e388a896d3c33a8957b088e"
+  },
+  "corpora": {
+    "verified": {
+      "collection": "quackquery_verified_ba71bdacec2641c5a6834badb99d3af4",
+      "embedding_model": "all-MiniLM-L6-v2",
+      "chunks": 5,
+      "documents": [
+        {
+          "filename": "cs583_2023_2024_reviewed.txt",
+          "document_id": "verified/cs583_2023_2024_reviewed.txt",
+          "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+          "title": "Archived CS 583 catalog entry",
+          "academic_year": "2023-2024",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 639
+        },
+        {
+          "filename": "graduate_admissions_reviewed.txt",
+          "document_id": "verified/graduate_admissions_reviewed.txt",
+          "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/application-requirements",
+          "title": "Graduate admissions requirements",
+          "academic_year": "unknown",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 599
+        },
+        {
+          "filename": "graduate_tuition_2025_2026_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2025_2026_reviewed.txt",
+          "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2025 and Spring 2026",
+          "academic_year": "2025-2026",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "graduate_tuition_2026_2027_reviewed.txt",
+          "document_id": "verified/graduate_tuition_2026_2027_reviewed.txt",
+          "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+          "title": "Graduate tuition: Fall 2026 and Spring 2027",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 482
+        },
+        {
+          "filename": "registrar_dates_reviewed.txt",
+          "document_id": "verified/registrar_dates_reviewed.txt",
+          "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+          "source_type": "verified_official_summary",
+          "publication_date": "unknown",
+          "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+          "title": "Registrar long-term dates",
+          "academic_year": "2026-2027",
+          "verified_at": "2026-09-17",
+          "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+          "characters": 406
+        }
+      ]
+    }
+  },
+  "model": "openai/gpt-oss-20b",
+  "top_k": 8,
+  "answer_evaluation": true,
+  "case_count": 2,
+  "limitations": "Regression cases, not held-out accuracy. Source presence is not evidence sufficiency. Status matching is not factual correctness. Review answers against reference_answer manually, including entailment, completeness, units, scope and contradictions.",
+  "results": [
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.1032891999993808,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V014",
+      "corpus": "verified",
+      "category": "calendar",
+      "question": "When is the last day of Fall 2026 classes?",
+      "reference_answer": "December 14, 2026; not the synthetic December 11.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "registrar_dates_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.0993945000000167,
+      "retrieved": [
+        "registrar_dates_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0,
+      "response": {
+        "status": "answered",
+        "message": "",
+        "claims": [
+          {
+            "text": "The last day of Fall 2026 classes is December 14, 2026.",
+            "evidence": [
+              {
+                "source_id": 1,
+                "quote": "Fall and Fall II classes finish on December 14, 2026."
+              }
+            ]
+          }
+        ]
+      },
+      "status_correct": true,
+      "review_context": [
+        {
+          "id": "3ed1207156e9073627998069627cb98eb351ab50e326e4164f487e5f621994e6",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. The registrar lists September 1, 2026 as the opening of Fall and Fall I classes. Fall and Fall II classes finish on December 14, 2026. Spring and Spring I classes open on January 19, 2027. Spring and Spring II classes finish on May 5, 2027. These are selected long-term planning dates. Consult the yearly calendar for complete detail.",
+          "metadata": {
+            "academic_year": "2026-2027",
+            "chunk_number": 0,
+            "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+            "document_id": "verified/registrar_dates_reviewed.txt",
+            "filename": "registrar_dates_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+            "title": "Registrar long-term dates",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "14b064dbc22bac53f5830f928483e06f9c8dc0bd3b84bf971dcd833007a6bb70",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Scope: graduate Fall 2026 and Spring 2027; professional online offerings have a separate schedule. For 9-12 credits, semester tuition is USD 22,995. Below 9 credits, tuition is USD 2,152 for each credit; credits above 12 also cost USD 2,152 each. Each semester, general-service charges are USD 715 for full-time enrollment and USD 470 for part-time enrollment. The full-time student-activity charge is USD 203.",
+          "metadata": {
+            "academic_year": "2026-2027",
+            "chunk_number": 0,
+            "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+            "document_id": "verified/graduate_tuition_2026_2027_reviewed.txt",
+            "filename": "graduate_tuition_2026_2027_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+            "title": "Graduate tuition: Fall 2026 and Spring 2027",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "e1e4c5efe4614c0e1101a66270ea1941ed0a70fbf0432479fb702e477cc32284",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Scope: graduate Fall 2025 and Spring 2026; professional online offerings have a separate schedule. For 9-12 credits, semester tuition is USD 22,110. Below 9 credits, tuition is USD 1,993 for each credit; credits above 12 also cost USD 1,993 each. Each semester, general-service charges are USD 688 for full-time enrollment and USD 452 for part-time enrollment. The full-time student-activity charge is USD 195.",
+          "metadata": {
+            "academic_year": "2025-2026",
+            "chunk_number": 0,
+            "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+            "document_id": "verified/graduate_tuition_2025_2026_reviewed.txt",
+            "filename": "graduate_tuition_2025_2026_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+            "title": "Graduate tuition: Fall 2025 and Spring 2026",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "f6d9024d7183e0d9a578779b7219be19ae8b5d8a2aca65b22964b8579db6e2ea",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Graduate admissions: the application charge is USD 60 and cannot be refunded. The purpose statement has a requested length of 500 to 1,000 words. Most graduate degrees ask for two academic or professional references; some doctoral degrees ask for three. Personal references are not accepted. Applicants can initially upload unofficial transcripts, but official versions are due before classes begin. Every attended postsecondary institution must supply an official transcript, including institutions where no degree was earned.",
+          "metadata": {
+            "academic_year": "unknown",
+            "chunk_number": 0,
+            "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+            "document_id": "verified/graduate_admissions_reviewed.txt",
+            "filename": "graduate_admissions_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/application-requirements",
+            "title": "Graduate admissions requirements",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "2f4b76b07f36aa8c6c594b02f002db736e587cdcf229997e7ac33778df8d72c5",
+          "text": "Reviewed factual summary of an archived entry, not a current enrollment decision. The 2023-2024 catalog identifies CS 583 as Deep Learning, with 3 credits. Its prerequisite field reads: MA 232 or CS 556 and (Grad Student or (Junior or Senior)). The description requires Python skills and linear algebra and mentions undergraduate linear algebra and probability as preparation. The description and prerequisite field should both be consulted; do not simplify the Boolean expression into an enrollment guarantee. This archived entry does not identify CS 559 as its prerequisite. It must not be substituted for a current-year course listing.",
+          "metadata": {
+            "academic_year": "2023-2024",
+            "chunk_number": 0,
+            "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+            "document_id": "verified/cs583_2023_2024_reviewed.txt",
+            "filename": "cs583_2023_2024_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+            "title": "Archived CS 583 catalog entry",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "semantic",
+      "retrieval_seconds": 0.11396179999974265,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "V018",
+      "corpus": "verified",
+      "category": "courses",
+      "question": "What formal prerequisite field is recorded for CS 583 in 2023-2024?",
+      "reference_answer": "MA 232 or CS 556 and (Grad Student or (Junior or Senior)); preserve grouping and historical scope without inventing CS 559.",
+      "expected_status": "answered",
+      "expected_sources": [
+        "cs583_2023_2024_reviewed.txt"
+      ],
+      "split": "regression",
+      "mode": "hybrid",
+      "retrieval_seconds": 0.10482670000055805,
+      "retrieved": [
+        "cs583_2023_2024_reviewed.txt",
+        "registrar_dates_reviewed.txt",
+        "graduate_admissions_reviewed.txt",
+        "graduate_tuition_2026_2027_reviewed.txt",
+        "graduate_tuition_2025_2026_reviewed.txt"
+      ],
+      "source_recall": 1.0,
+      "all_sources": true,
+      "reciprocal_rank": 1.0,
+      "response": {
+        "status": "answered",
+        "message": "",
+        "claims": [
+          {
+            "text": "The formal prerequisite field for CS\u202f583 in the 2023\u20112024 academic year is \"MA\u202f232 or CS\u202f556 and (Grad\u202fStudent or (Junior or Senior))\".",
+            "evidence": [
+              {
+                "source_id": 1,
+                "quote": "Its prerequisite field reads: MA 232 or CS 556 and (Grad Student or (Junior or Senior))."
+              }
+            ]
+          }
+        ]
+      },
+      "status_correct": true,
+      "review_context": [
+        {
+          "id": "2f4b76b07f36aa8c6c594b02f002db736e587cdcf229997e7ac33778df8d72c5",
+          "text": "Reviewed factual summary of an archived entry, not a current enrollment decision. The 2023-2024 catalog identifies CS 583 as Deep Learning, with 3 credits. Its prerequisite field reads: MA 232 or CS 556 and (Grad Student or (Junior or Senior)). The description requires Python skills and linear algebra and mentions undergraduate linear algebra and probability as preparation. The description and prerequisite field should both be consulted; do not simplify the Boolean expression into an enrollment guarantee. This archived entry does not identify CS 559 as its prerequisite. It must not be substituted for a current-year course listing.",
+          "metadata": {
+            "academic_year": "2023-2024",
+            "chunk_number": 0,
+            "content_hash": "80634a10d60c052a7a3bb17708f65579c69b6696eceec23632ff8b868e2341d6",
+            "document_id": "verified/cs583_2023_2024_reviewed.txt",
+            "filename": "cs583_2023_2024_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://web.stevens.edu/catalog/archive/2023-2024/en/catalog/academic-catalog/courses/cs-computer-science/500/cs-583.html",
+            "title": "Archived CS 583 catalog entry",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "3ed1207156e9073627998069627cb98eb351ab50e326e4164f487e5f621994e6",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. The registrar lists September 1, 2026 as the opening of Fall and Fall I classes. Fall and Fall II classes finish on December 14, 2026. Spring and Spring I classes open on January 19, 2027. Spring and Spring II classes finish on May 5, 2027. These are selected long-term planning dates. Consult the yearly calendar for complete detail.",
+          "metadata": {
+            "academic_year": "2026-2027",
+            "chunk_number": 0,
+            "content_hash": "efa64975a3b94e9e5a8054911894f32207bf4559a7467bdebb2e92c1a149f07a",
+            "document_id": "verified/registrar_dates_reviewed.txt",
+            "filename": "registrar_dates_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-basic/registrar-important-dates",
+            "title": "Registrar long-term dates",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "f6d9024d7183e0d9a578779b7219be19ae8b5d8a2aca65b22964b8579db6e2ea",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Graduate admissions: the application charge is USD 60 and cannot be refunded. The purpose statement has a requested length of 500 to 1,000 words. Most graduate degrees ask for two academic or professional references; some doctoral degrees ask for three. Personal references are not accepted. Applicants can initially upload unofficial transcripts, but official versions are due before classes begin. Every attended postsecondary institution must supply an official transcript, including institutions where no degree was earned.",
+          "metadata": {
+            "academic_year": "unknown",
+            "chunk_number": 0,
+            "content_hash": "b916fb7a6e79e18371273fd609a2c36d977e85eeecae5b5c6757e981b3a68e00",
+            "document_id": "verified/graduate_admissions_reviewed.txt",
+            "filename": "graduate_admissions_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/application-requirements",
+            "title": "Graduate admissions requirements",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "14b064dbc22bac53f5830f928483e06f9c8dc0bd3b84bf971dcd833007a6bb70",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Scope: graduate Fall 2026 and Spring 2027; professional online offerings have a separate schedule. For 9-12 credits, semester tuition is USD 22,995. Below 9 credits, tuition is USD 2,152 for each credit; credits above 12 also cost USD 2,152 each. Each semester, general-service charges are USD 715 for full-time enrollment and USD 470 for part-time enrollment. The full-time student-activity charge is USD 203.",
+          "metadata": {
+            "academic_year": "2026-2027",
+            "chunk_number": 0,
+            "content_hash": "5818ce782b34140980fa7bad4835010fbb16403005ac142c3d0beeef6f6ed88b",
+            "document_id": "verified/graduate_tuition_2026_2027_reviewed.txt",
+            "filename": "graduate_tuition_2026_2027_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+            "title": "Graduate tuition: Fall 2026 and Spring 2027",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        },
+        {
+          "id": "e1e4c5efe4614c0e1101a66270ea1941ed0a70fbf0432479fb702e477cc32284",
+          "text": "Reviewed factual summary, not a verbatim copy of the official webpage. Scope: graduate Fall 2025 and Spring 2026; professional online offerings have a separate schedule. For 9-12 credits, semester tuition is USD 22,110. Below 9 credits, tuition is USD 1,993 for each credit; credits above 12 also cost USD 1,993 each. Each semester, general-service charges are USD 688 for full-time enrollment and USD 452 for part-time enrollment. The full-time student-activity charge is USD 195.",
+          "metadata": {
+            "academic_year": "2025-2026",
+            "chunk_number": 0,
+            "content_hash": "1c95c3165d809954fb8097ad32a25e37c1bb67d4e10e0ddb43e78413d8c894cd",
+            "document_id": "verified/graduate_tuition_2025_2026_reviewed.txt",
+            "filename": "graduate_tuition_2025_2026_reviewed.txt",
+            "locator": "Reviewed source summary",
+            "publication_date": "unknown",
+            "source_type": "verified_official_summary",
+            "source_url": "https://www.stevens.edu/page-chapter/tuition-and-fees",
+            "title": "Graduate tuition: Fall 2025 and Spring 2026",
+            "verification_method": "Assistant-reviewed factual summary checked against the linked official university page; not independently reviewed.",
+            "verified_at": "2026-09-17"
+          }
+        }
+      ],
+      "manual_review": {
+        "factual_correctness": null,
+        "citation_entailment": null,
+        "completeness": null,
+        "notes": "Not reviewed"
+      }
+    }
+  ],
+  "completed_cases": 2,
+  "summary": {
+    "verified": {
+      "semantic": {
+        "rows": 2,
+        "source_recall": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "status_correct": {
+          "count": 0,
+          "mean": null
+        },
+        "generation_errors": 0
+      },
+      "hybrid": {
+        "rows": 2,
+        "source_recall": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "all_sources": {
+          "count": 2,
+          "mean": 1
+        },
+        "reciprocal_rank": {
+          "count": 2,
+          "mean": 1.0
+        },
+        "status_correct": {
+          "count": 2,
+          "mean": 1
+        },
+        "generation_errors": 0
+      }
+    }
+  },
+  "by_category": {
+    "calendar": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 1
+      },
+      "generation_errors": 0
+    },
+    "courses": {
+      "rows": 1,
+      "source_recall": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "all_sources": {
+        "count": 1,
+        "mean": 1
+      },
+      "reciprocal_rank": {
+        "count": 1,
+        "mean": 1.0
+      },
+      "status_correct": {
+        "count": 1,
+        "mean": 1
+      },
+      "generation_errors": 0
+    }
+  }
+}

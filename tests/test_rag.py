@@ -51,3 +51,28 @@ class RagTests(unittest.TestCase):
                    ("wrong", "", {}, Counter(["cs", "541", "prerequisite"]), 3)]
         self.assertEqual(bm25("CS 583 prerequisite", records)[0][0], "right")
         self.assertEqual(fuse(["a", "b"], ["b", "c"])[0], "b")
+
+    def test_chained_followup_retains_anchor(self):
+        history = [{"role": "user", "content": "What is tuition in 2026?"},
+                   {"role": "user", "content": "What about 2025?"}]
+        self.assertIn("tuition", contextualize("And what about fees?", history))
+
+    def test_unrelated_prior_topic_excluded(self):
+        history = [{"role": "user", "content": "What are scholarships?"},
+                   {"role": "user", "content": "What is tuition?"}]
+        self.assertNotIn("scholarships", contextualize("What about last year?", history))
+
+    def test_provider_contract_and_fail_closed(self):
+        from src.rag import generate_response
+        with patch.dict("os.environ", {"GROQ_API_KEY": "test-only", "GROQ_MODEL": "openai/gpt-oss-20b"}), patch("groq.Groq") as factory:
+            completion = factory.return_value.chat.completions.create
+            completion.return_value.choices[0].message.content = "not JSON"
+            self.assertEqual(generate_response("Test question", self.chunks)["status"], "validation_failed")
+            self.assertTrue(completion.call_args.kwargs["response_format"]["json_schema"]["strict"])
+            self.assertEqual(completion.call_args.kwargs["reasoning_effort"], "low")
+
+    def test_empty_sources_do_not_call_provider(self):
+        from src.rag import generate_response
+        with patch("groq.Groq") as factory:
+            self.assertEqual(generate_response("Test question", [])["status"], "unknown")
+            factory.assert_not_called()

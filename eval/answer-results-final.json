@@ -1,0 +1,857 @@
+{
+  "created_at": "2026-09-16T18:42:06.388830+00:00",
+  "split": "test",
+  "collection": "quackquery_synthetic_416046ea2d2f44a480dc1e4a02a2e9ee",
+  "corpus_hashes": {
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/01_Graduate_Admissions_Requirements_2026.docx": "50b234d48c658cb110015fb530b7b848598992ca3436260596996941d8894221",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/02_Undergraduate_Admissions_Requirements_2026.docx": "eaaa495ff081b3f75e3fec6f6a6634de365ad6c0997b4ecb93332da4cf5fa15a",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/03_CS_Program_Handbook_2026.docx": "a8a4f1ed199c1c21119d6b99bfea44d4ced7b29ba0fdf67606c6d40b87cb5514",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/04_DS_Program_Handbook_2026.docx": "074448a906ab78309a3aace19ec3f4fe71fb6cd9b1f084bc86fe457fd4f78671",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/05_Cybersecurity_Program_Handbook_2026.docx": "8ccff87e05e5964c067f9aa50a43c945d703fdec8587f378652eae9691015f46",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/06_Course_Catalog_2026_2027.docx": "66384060176c70dbc88150356617a787d57a5905797ea9d5ea93cebbd0cda48a",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/07_Tuition_Fees_2025_2026.docx": "eef1ec3d895a22b3c6fa167f1aa5c0d4b5014a24a246c5f8592aa776cad1e2ef",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/08_Tuition_Fees_2026_2027.docx": "fa266eb938d52323015d7b548283149d539c2092f1fc58111c7a3e49d9b60422",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/09_Academic_Calendar_2025_2026.docx": "9a53c84d70878f2fa1a2cd97f7a4ec5be576f688b75a6701709978ac9b33e457",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/10_Academic_Calendar_2026_2027.docx": "23733af2f7afb004209b434fe772c60e11ff064921befbcce54258638e325f89",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/11_Scholarship_Policy_2026.docx": "9635919983ac7560464377bed8a9e7a6c0a204fee39fc168e2d550d466619db7",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/12_Assistantship_Policy_2026.docx": "41ee502766524a5a1a3f3cf589247a79b7feca4ca83440500e59bf3460c99598",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/13_Housing_Policy_2026.docx": "47c10c083a40b87a64ae6e3db7f5d5ba4bfa789730cdcd2fd84fb53543512d0f",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/14_Dining_Policy_2026.docx": "200cfdb6b9f5f6a9323d65d68839e1688a61d059b5b31f7d0c855d17367b6871",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/15_CS_Program_Handbook_2025.docx": "c3a9698c417d399641053aa4fb15157d1bbb6bf447e50ac16471b3234a092af2",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/16_Graduate_Admissions_2025.docx": "8b037e805e426b980681fa87918eaee4109e4245f89e8b4bafb511eaaa2dbccd",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/17_Scholarship_Assistantship_FAQ_2026.docx": "f13ee99c83b4f25963d0855297f30a28ffd8831b251c34df261bf0c91c8a3868",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/18_Student_Record_Policy_2026.docx": "355145f24e0f172ff001266ef6359136574e6354bf0116d45558c868d7bf9ec8",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/19_Registration_Add_Drop_2026.docx": "4235706fb030760d6fe1599c4d58ee23be8210c824ed43b04aac165b8ccb1904",
+    "stevens_synthetic_knowledge_base/01_SYNTHETIC_TEST_DATA/20_International_Student_Guidance_2026.docx": "cd329962b60fe98c61fcd1d6a607ebd829a4877574a1dff40cc10c329a7d3807"
+  },
+  "rag_code_sha256": "2b5e813b4206e4edf73a2ccf4ee351677319e00f46a5652195b48a806b70d78b",
+  "answer_evaluation": true,
+  "model": "openai/gpt-oss-20b",
+  "request_interval_seconds": 20.0,
+  "case_count": 23,
+  "summary": {
+    "semantic": {
+      "source_recall_at_3": 0.9705882352941176,
+      "all_sources_at_3": 0.9411764705882353,
+      "reciprocal_rank": 0.7745098039215687,
+      "evidence_coverage_at_3": 1.0,
+      "seconds": 0.06965928261026579
+    },
+    "hybrid": {
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": 1,
+      "reciprocal_rank": 0.8725490196078431,
+      "evidence_coverage_at_3": 1.0,
+      "seconds": 0.056363278260940446,
+      "status_accuracy": 1,
+      "generation_errors": 0
+    }
+  },
+  "results": [
+    {
+      "id": "course_ds550",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.051564900000812486,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "course_ds550",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.055415800015907735,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "The prerequisite for DS\u202f550 is DS\u202f510 or an approved equivalent. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.7372373999969568
+    },
+    {
+      "id": "course_ds510",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.04847499998868443,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "course_ds510",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "06_Course_Catalog_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.04704219999257475,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "DS 510 has the prerequisite Introductory statistics. [Source 1] [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.35638769998331554
+    },
+    {
+      "id": "tuition_new",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.12010260001989082,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "tuition_new",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "seconds": 0.09961219999240711,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Graduate tuition per credit for the 2026-2027 academic year is $1,925. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.4909580000094138
+    },
+    {
+      "id": "fees_old",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.12869210002827458,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "fees_old",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "seconds": 0.057941899984143674,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "The graduate student services fee for the 2025-2026 academic year is $120 per semester. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.5592003000201657
+    },
+    {
+      "id": "tuition_compare",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.08529330001329072,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "tuition_compare",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.0626607000012882,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Graduate tuition per credit for the 2025-2026 academic year is $1,850. [Source 1]\n\nGraduate tuition per credit for the 2026-2027 academic year is $1,925. [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.3660585999896284
+    },
+    {
+      "id": "calendar_new",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.09788039998966269,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "calendar_new",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.09281199998804368,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Fall 2026 classes begin on September 1, 2026. [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.3702608000021428
+    },
+    {
+      "id": "spring_new",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.05636429999140091,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "spring_new",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "06_Course_Catalog_2026_2027.docx"
+      ],
+      "seconds": 0.060949400009121746,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Spring 2027 classes begin on January 19, 2027. [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.4442763999977615
+    },
+    {
+      "id": "ds_courses",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "04_DS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.08020479997503571,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "ds_courses",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "03_CS_Program_Handbook_2026.docx",
+        "04_DS_Program_Handbook_2026.docx",
+        "05_Cybersecurity_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.04841590000432916,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "DS 510 Statistical Methods [Source 2]\n\nDS 520 Data Management [Source 2]\n\nDS 550 Applied Machine Learning [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.6529395999968983
+    },
+    {
+      "id": "cyber_courses",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "06_Course_Catalog_2026_2027.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.07512839999981225,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "cyber_courses",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "05_Cybersecurity_Program_Handbook_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "15_CS_Program_Handbook_2025.docx"
+      ],
+      "seconds": 0.08275500001036562,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Sample courses listed for the Cybersecurity program are CY 510 Security Foundations, CY 520 Network Defense, and CY 560 Secure Software. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.4015596999961417
+    },
+    {
+      "id": "cs_compare",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx"
+      ],
+      "seconds": 0.06555940001271665,
+      "source_recall_at_3": 0.5,
+      "all_sources_at_3": false,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "cs_compare",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "15_CS_Program_Handbook_2025.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.05040530001861043,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "The 2025 Computer Science Program Handbook lists CS 541 Artificial Intelligence and CS 559 Machine Learning as sample core courses. [Source 1]\n\nThe 2026 Computer Science Program Handbook lists CS 541 Artificial Intelligence, CS 559 Machine Learning, and CS 583 Deep Learning as sample core courses. [Source 2]\n\nThus, the 2026 handbook adds CS 583 Deep Learning to the core curriculum that is not present in the 2025 handbook. [Source 1] [Source 2]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": false,
+      "generation_seconds": 0.7775055000092834
+    },
+    {
+      "id": "grad_apply",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.05975479999324307,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "grad_apply",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.053015699988463894,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.3333333333333333,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Graduate applicants are expected to submit an online application, application fee, academic transcripts, r\u00e9sum\u00e9 or curriculum vitae, statement of purpose, and any program\u2011specific materials identified by the intended program. [Source 3]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.5691961999982595
+    },
+    {
+      "id": "dining",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "seconds": 0.056180099985795096,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "dining",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "14_Dining_Policy_2026.docx",
+        "03_CS_Program_Handbook_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.05336469999747351,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Meal\u2011plan options are determined by the student\u2019s category and by their housing arrangement. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": false,
+      "generation_seconds": 0.4947628999943845
+    },
+    {
+      "id": "scholarship",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "11_Scholarship_Policy_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "seconds": 0.0655368999869097,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "scholarship",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "11_Scholarship_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.04565159999765456,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Graduate scholarship eligibility requires full\u2011time enrollment, satisfactory academic progress, and submission of the scholarship application by the stated deadline. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": false,
+      "generation_seconds": 0.4664684000017587
+    },
+    {
+      "id": "assistantship",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "12_Assistantship_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.0639841000083834,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "assistantship",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "12_Assistantship_Policy_2026.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "seconds": 0.05648309999378398,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "The policy lists teaching\u2011assistant, course\u2011assistant, research\u2011assistant, or other approved roles as the types of graduate assistantship roles available. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": false,
+      "generation_seconds": 0.4478825999831315
+    },
+    {
+      "id": "records",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "18_Student_Record_Policy_2026.docx",
+        "20_International_Student_Guidance_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.07230550001258962,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "records",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "18_Student_Record_Policy_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx",
+        "20_International_Student_Guidance_2026.docx"
+      ],
+      "seconds": 0.056550399982370436,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "Student records should be accessed and disclosed only for authorized educational or administrative purposes. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.6827919000061229
+    },
+    {
+      "id": "registration",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "19_Registration_Add_Drop_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.05989189998945221,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 0.5,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "registration",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "19_Registration_Add_Drop_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "03_CS_Program_Handbook_2026.docx"
+      ],
+      "seconds": 0.04782599999452941,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "A course prerequisite must be satisfied or formally approved before registration can be completed when the system enforces that prerequisite. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.6968478999915533
+    },
+    {
+      "id": "international",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "20_International_Student_Guidance_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.052448200003709644,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0
+    },
+    {
+      "id": "international",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "20_International_Student_Guidance_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "seconds": 0.043674100015778095,
+      "source_recall_at_3": 1.0,
+      "all_sources_at_3": true,
+      "reciprocal_rank": 1.0,
+      "evidence_coverage_at_3": 1.0,
+      "answer": "The International Student Academic Guidance document covers academic\u2011planning topics such as enrollment planning, document maintenance, and consultation with the designated university office when immigration\u2011related questions arise. [Source 1]",
+      "status": "answered",
+      "status_correct": true,
+      "required_fact_match": true,
+      "generation_seconds": 0.8017082000151277
+    },
+    {
+      "id": "unknown_parking",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "13_Housing_Policy_2026.docx"
+      ],
+      "seconds": 0.05590829998254776,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "unknown_parking",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.04518300000927411,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "I don't know based on the university documents.",
+      "status": "unknown",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.5201388999994379
+    },
+    {
+      "id": "unknown_deadline",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "11_Scholarship_Policy_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "09_Academic_Calendar_2025_2026.docx"
+      ],
+      "seconds": 0.07053140000789426,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "unknown_deadline",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "11_Scholarship_Policy_2026.docx",
+        "16_Graduate_Admissions_2025.docx",
+        "17_Scholarship_Assistantship_FAQ_2026.docx"
+      ],
+      "seconds": 0.04669300001114607,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "I don't know based on the university documents.",
+      "status": "unknown",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.2672686000005342
+    },
+    {
+      "id": "unknown_personal",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx",
+        "02_Undergraduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.052856900001643226,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "unknown_personal",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "16_Graduate_Admissions_2025.docx",
+        "20_International_Student_Guidance_2026.docx",
+        "01_Graduate_Admissions_Requirements_2026.docx"
+      ],
+      "seconds": 0.05090510001173243,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "I don't know based on the university documents.",
+      "status": "unknown",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.35667219999595545
+    },
+    {
+      "id": "unknown_contract",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "14_Dining_Policy_2026.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.05789530000765808,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "unknown_contract",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "13_Housing_Policy_2026.docx",
+        "14_Dining_Policy_2026.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.04756099998485297,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "I don't know based on the university documents.",
+      "status": "unknown",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.25554660000489093
+    },
+    {
+      "id": "ambiguous_calendar",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.06223480001790449,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "ambiguous_calendar",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "09_Academic_Calendar_2025_2026.docx",
+        "10_Academic_Calendar_2026_2027.docx",
+        "19_Registration_Add_Drop_2026.docx"
+      ],
+      "seconds": 0.04582749999826774,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "Which academic term are you asking about (Fall, Spring, etc.)?",
+      "status": "clarify",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.47917409997899085
+    },
+    {
+      "id": "ambiguous_tuition",
+      "split": "test",
+      "mode": "semantic",
+      "retrieved": [
+        "07_Tuition_Fees_2025_2026.docx",
+        "08_Tuition_Fees_2026_2027.docx",
+        "11_Scholarship_Policy_2026.docx"
+      ],
+      "seconds": 0.06337010001880117,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null
+    },
+    {
+      "id": "ambiguous_tuition",
+      "split": "test",
+      "mode": "hybrid",
+      "retrieved": [
+        "08_Tuition_Fees_2026_2027.docx",
+        "07_Tuition_Fees_2025_2026.docx",
+        "16_Graduate_Admissions_2025.docx"
+      ],
+      "seconds": 0.04560979999951087,
+      "source_recall_at_3": null,
+      "all_sources_at_3": null,
+      "reciprocal_rank": null,
+      "evidence_coverage_at_3": null,
+      "answer": "Which academic year would you like the graduate tuition per credit for?",
+      "status": "clarify",
+      "status_correct": true,
+      "required_fact_match": null,
+      "generation_seconds": 0.3370072999969125
+    }
+  ]
+}

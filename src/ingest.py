@@ -34,6 +34,8 @@ def word_text(element):
 
 
 def load_document(path):
+    if path.suffix.lower() == ".txt":
+        return [("Reviewed source summary", path.read_text(encoding="utf-8"))]
     if path.suffix.lower() == ".pdf":
         from pypdf import PdfReader
         return [(f"Page {i}", p.extract_text() or "")
@@ -56,10 +58,12 @@ def discover_documents(corpus, data_dir=DATA_DIR):
         raise ValueError("Unknown corpus")
     files = []
     for path in sorted(data_dir.rglob("*")):
-        if path.suffix.lower() not in (".pdf", ".docx") or path.name.startswith("~$"):
+        if path.suffix.lower() not in (".pdf", ".docx", ".txt") or path.name.startswith("~$"):
             continue
-        synthetic = "synthetic" in path.relative_to(data_dir).as_posix().lower()
-        if synthetic != (corpus == "synthetic"):
+        relative = path.relative_to(data_dir)
+        synthetic = "synthetic" in relative.as_posix().lower()
+        actual_corpus = "verified" if relative.parts[0] == "verified" else ("synthetic" if synthetic else "unverified")
+        if actual_corpus != corpus or (path.suffix.lower() == ".txt" and corpus != "verified"):
             continue
         if path.suffix.lower() == ".docx" and path.with_suffix(".pdf").exists():
             continue
@@ -124,6 +128,15 @@ def prepare_corpus(corpus, data_dir=DATA_DIR):
                 "content_hash": hashlib.sha256(path.read_bytes()).hexdigest(),
                 "source_type": "synthetic_test_data" if corpus == "synthetic" else "unverified",
                 "publication_date": published.group(1).strip() if published else "unknown"}
+        if corpus == "verified":
+            registry = json.loads((data_dir / "verified" / "sources.json").read_text(encoding="utf-8"))
+            record = registry.get(path.name)
+            from urllib.parse import urlparse
+            if (not record or record.get("content_hash") != base["content_hash"]
+                or urlparse(record.get("source_url", "")).scheme != "https"
+                or urlparse(record.get("source_url", "")).hostname not in ("www.stevens.edu", "web.stevens.edu")):
+                raise ValueError(f"Verified source requires reviewed provenance and matching hash: {path.name}")
+            base.update(record)
         inventory.append({**base, "characters": len(full_text)})
         for locator, text in sections:
             for i, chunk in enumerate(split_text(text)):

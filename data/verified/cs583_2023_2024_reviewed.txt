@@ -1,0 +1,5 @@
+Reviewed factual summary of an archived entry, not a current enrollment decision.
+The 2023-2024 catalog identifies CS 583 as Deep Learning, with 3 credits.
+Its prerequisite field reads: MA 232 or CS 556 and (Grad Student or (Junior or Senior)).
+The description requires Python skills and linear algebra and mentions undergraduate linear algebra and probability as preparation. The description and prerequisite field should both be consulted; do not simplify the Boolean expression into an enrollment guarantee.
+This archived entry does not identify CS 559 as its prerequisite. It must not be substituted for a current-year course listing.

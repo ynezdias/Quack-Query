@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 CHROMA_DIR = ROOT / "chroma_db"
 MANIFEST = CHROMA_DIR / "quackquery.json"
-CORPORA = ("synthetic", "unverified")
+CORPORA = ("synthetic", "unverified", "verified")
 
 
 def read_manifest():
