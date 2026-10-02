@@ -18,3 +18,11 @@ Streamlit conversation history and throttling are per session, not durable accou
 Verify a deployment's health endpoint (`/_stcore/health`), browser connection, supported answer with citations, unknown-answer behavior, source downloads, and mobile layout before reporting it ready.
 
 Platform references: [container images](https://vercel.com/docs/functions/container-images), [WebSockets](https://vercel.com/docs/functions/websockets).
+
+## Production verification — October 2, 2026
+
+Production URL: https://quackquery-seven.vercel.app
+
+The deployed application returned HTTP 200 from its health endpoint and connected successfully in Microsoft Edge. Live checks passed for synthetic admissions answers with citations, unknown personal information, the reviewed CS 583 prerequisite with its official source link, and an answer from the original International Students FAQ PDF. DOCX and PDF source downloads succeeded. The mobile layout at 390 pixels had no horizontal overflow. Local checks passed: 46 tests.
+
+The Groq key was configured as an encrypted production/preview environment variable with the account owner's explicit permission. It is excluded from source uploads and container images. Git-based automatic deployment is not connected; Vercel requested a GitHub login connection. CLI production deployment works independently.
