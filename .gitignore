@@ -8,3 +8,7 @@ chroma_db/
 .cache/
 
 eval/ci-results.json
+.vercel/
+
+.vercel
+.env*

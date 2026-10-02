@@ -1,4 +1,6 @@
 import hashlib
+import base64
+import html
 import math
 import os
 import logging
@@ -71,8 +73,13 @@ def render_result(result, turn):
                     if path.is_relative_to(DATA_DIR.resolve()) and path.is_file() and path.suffix.lower() in (".pdf", ".docx"):
                         source_bytes = path.read_bytes()
                         if hashlib.sha256(source_bytes).hexdigest() == meta.get("content_hash"):
-                            st.download_button("Download source", source_bytes, file_name=path.name,
-                                key=f"download_{corpus}_{turn}_{number}_{evidence_number}")
+                            if os.getenv("QUACKQUERY_INLINE_DOWNLOADS") == "1":
+                                mime = "application/pdf" if path.suffix.lower() == ".pdf" else "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                encoded = base64.b64encode(source_bytes).decode("ascii")
+                                st.markdown(f'<a href="data:{mime};base64,{encoded}" download="{html.escape(path.name, quote=True)}">Download source</a>', unsafe_allow_html=True)
+                            else:
+                                st.download_button("Download source", source_bytes, file_name=path.name,
+                                    key=f"download_{corpus}_{turn}_{number}_{evidence_number}")
                         else:
                             st.caption("The local document has changed since this answer was indexed. Re-index to download matching evidence.")
     else:
