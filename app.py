@@ -1,4 +1,5 @@
 import hashlib
+import math
 import os
 import logging
 from groq import RateLimitError
@@ -7,6 +8,7 @@ from styles import STYLES
 from presentation import brand_markup, hero_markup, EMPTY_MARKUP, FOOTER_MARKUP
 from src.rag import ask
 from src.knowledge import DATA_DIR
+from src.runtime import request_limit, recent_requests, retry_after, service_error_message
 import time
 
 st.set_page_config(
@@ -116,22 +118,33 @@ with st.container(key="conversation"):
 
     if question:
         now = time.monotonic()
-        recent = [timestamp for timestamp in st.session_state.get("requests", []) if now - timestamp < 60]
-        if len(recent) >= 6:
-            st.warning("Please wait a moment. This demo allows six questions per minute per session.")
+        recent = recent_requests(st.session_state.get("requests", []), now)
+        st.session_state["requests"] = recent
+        limit = request_limit()
+        provider_wait = max(0, math.ceil(st.session_state.get("provider_retry_at", 0) - now))
+        if provider_wait:
+            st.warning(f"The AI provider is cooling down. Please try again in {provider_wait} seconds. Your conversation is preserved.")
+        elif len(recent) >= limit:
+            wait = max(1, math.ceil(60 - (now - min(recent))))
+            st.warning(f"This session allows {limit} completed questions per minute. Please try again in {wait} seconds.")
         else:
-            st.session_state["requests"] = recent + [now]
             context_end = selected_turns.get(corpus, max(0, len(messages) - 2)) + 2
             history = [{"role": m["role"], "content": m["content"]} for m in messages[:context_end][-6:]]
             with st.spinner("Searching your documents and checking the evidence…"):
                 try:
                     result = ask(question, corpus=corpus, history=history)
-                except RateLimitError:
-                    st.warning("The AI service has reached its rate limit. Please wait a minute and try again.")
-                except Exception:
-                    logging.exception("QuackQuery request failed")
-                    st.error("The answer service is unavailable. Please try again shortly.")
+                except RateLimitError as exc:
+                    wait = retry_after(exc)
+                    st.session_state["provider_retry_at"] = time.monotonic() + wait
+                    st.warning(f"The AI provider has reached its limit. Please retry in {wait} seconds. This failed request did not use your session allowance.")
+                except Exception as exc:
+                    logging.warning("QuackQuery request failed: %s", type(exc).__name__)
+                    st.error(service_error_message(exc))
                 else:
+                    if result["response"]["status"] != "validation_failed":
+                        finished = time.monotonic()
+                        st.session_state["requests"] = recent_requests(recent, finished) + [finished]
+                    st.session_state.pop("provider_retry_at", None)
                     messages.extend([{"role": "user", "content": question},
                                      {"role": "assistant", "content": result["answer"], "result": result}])
                     conversations[corpus] = messages[-20:]

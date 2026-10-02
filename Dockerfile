@@ -8,7 +8,7 @@ RUN useradd --create-home --uid 10001 quackquery && chown quackquery:quackquery 
 COPY --chown=quackquery:quackquery src ./src
 USER quackquery
 RUN python -c "from src.embeddings import get_encoder; get_encoder()"
-COPY --chown=quackquery:quackquery app.py styles.py ./
+COPY --chown=quackquery:quackquery app.py styles.py presentation.py ./
 COPY --chown=quackquery:quackquery .streamlit ./.streamlit
 COPY --chown=quackquery:quackquery data ./data
 RUN mkdir -p chroma_db
