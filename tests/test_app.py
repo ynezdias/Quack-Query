@@ -4,6 +4,21 @@ from streamlit.testing.v1 import AppTest
 
 
 class AppTests(unittest.TestCase):
+    def test_starter_uses_existing_question_flow_once(self):
+        result = {"answer": "Test answer", "response": {"status": "unknown", "message": "Test answer", "claims": []}, "chunks": [], "seconds": 0.1}
+        with patch.dict("os.environ", {"QUACKQUERY_CORPUS": ""}), patch("src.rag.ask", return_value=result) as service:
+            app = AppTest.from_file("app.py", default_timeout=30).run()
+            app.button(key="starter_admissions").click().run()
+            self.assertFalse(app.exception)
+            service.assert_called_once_with("What are the graduate admission requirements?", corpus="synthetic", history=[])
+            self.assertEqual(len(app.chat_message), 2)
+            self.assertEqual(len(app.session_state["requests"]), 1)
+            app.run()
+            self.assertEqual(service.call_count, 1)
+            app.button[0].click().run()
+            self.assertEqual(len(app.chat_message), 0)
+            self.assertEqual(app.button(key="starter_admissions").label, "Explore admissions")
+
     def test_history_followup_isolation_and_clear(self):
         result = {"answer": "Test answer", "response": {"status": "unknown", "message": "Test answer", "claims": []}, "chunks": [], "seconds": 0.1}
         with patch.dict("os.environ", {"QUACKQUERY_CORPUS": ""}), patch("src.rag.ask", return_value=result) as service:
