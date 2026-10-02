@@ -76,3 +76,59 @@ class RagTests(unittest.TestCase):
         with patch("groq.Groq") as factory:
             self.assertEqual(generate_response("Test question", [])["status"], "unknown")
             factory.assert_not_called()
+
+    def test_provider_client_is_closed_when_connection_fails(self):
+        import httpx
+        from groq import APIConnectionError
+        from src.rag import generate_response
+        error = APIConnectionError(request=httpx.Request("POST", "https://api.groq.com/test"))
+        with patch.dict("os.environ", {"GROQ_API_KEY": "test-only"}), patch("groq.Groq") as factory:
+            factory.return_value.chat.completions.create.side_effect = error
+            with self.assertRaises(APIConnectionError):
+                generate_response("Test question", self.chunks)
+            factory.return_value.close.assert_called_once()
+
+    def test_empty_provider_content_fails_citation_validation(self):
+        from src.rag import generate_response
+        with patch.dict("os.environ", {"GROQ_API_KEY": "test-only"}), patch("groq.Groq") as factory:
+            factory.return_value.chat.completions.create.return_value.choices = []
+            self.assertEqual(generate_response("Test question", self.chunks)["status"], "validation_failed")
+            factory.return_value.close.assert_called_once()
+
+    def test_missing_and_placeholder_keys_fail_before_api_call(self):
+        from src.rag import generate_response
+        from src.runtime import ConfigurationError
+        for key in ("", "  ", "replace-with-your-key"):
+            with patch.dict("os.environ", {"GROQ_API_KEY": key}), patch("groq.Groq") as factory:
+                with self.assertRaises(ConfigurationError):
+                    generate_response("Test question", self.chunks)
+                factory.assert_not_called()
+
+    def test_invalid_quote_gets_one_bounded_correction_with_same_sources(self):
+        import json
+        from types import SimpleNamespace
+        from src.rag import generate_response
+        invalid = {"status": "answered", "claims": [{"text": "Invented prerequisite", "evidence": [{"source_id": 1, "quote": "CS 999 is the prerequisite."}]}]}
+        def completion(payload):
+            return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=json.dumps(payload)))])
+        with patch.dict("os.environ", {"GROQ_API_KEY": "test-only"}), patch("groq.Groq") as factory:
+            create = factory.return_value.chat.completions.create
+            create.side_effect = [completion(invalid), completion(self.payload)]
+            result = generate_response("Test question", self.chunks)
+            self.assertEqual(result["status"], "answered")
+            self.assertEqual(create.call_count, 2)
+            initial = create.call_args_list[0].kwargs["messages"]
+            correction = create.call_args_list[1].kwargs["messages"]
+            self.assertEqual(initial[:2], correction[:2])
+            self.assertIn("Quotation not found", correction[-1]["content"])
+            factory.return_value.close.assert_called_once()
+
+    def test_two_invalid_outputs_never_display_unsupported_claims(self):
+        from src.rag import generate_response
+        with patch.dict("os.environ", {"GROQ_API_KEY": "test-only"}), patch("groq.Groq") as factory:
+            create = factory.return_value.chat.completions.create
+            create.return_value.choices[0].message.content = "not JSON"
+            result = generate_response("Test question", self.chunks)
+            self.assertEqual(result["status"], "validation_failed")
+            self.assertEqual(result["claims"], [])
+            self.assertEqual(create.call_count, 2)
