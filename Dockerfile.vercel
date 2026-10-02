@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r requirements.txt
+COPY src ./src
+COPY data ./data
+RUN python -m src.ingest --corpus synthetic && python -m src.ingest --corpus unverified && python -m src.ingest --corpus verified
+COPY app.py styles.py presentation.py ./
+COPY .streamlit ./.streamlit
+ENV HF_HUB_OFFLINE=1 QUACKQUERY_INDEX_DIR=/tmp/quackquery-index PORT=8501 QUACKQUERY_INLINE_DOWNLOADS=1
+EXPOSE 8501
+CMD ["python", "-m", "src.container_start"]

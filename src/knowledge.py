@@ -1,12 +1,13 @@
 """Corpus isolation and atomic index publication."""
 import json
+import os
 from pathlib import Path
 from src.embeddings import MODEL_NAME
 from src.runtime import IndexUnavailableError
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
-CHROMA_DIR = ROOT / "chroma_db"
+CHROMA_DIR = Path(os.getenv("QUACKQUERY_INDEX_DIR", str(ROOT / "chroma_db")))
 MANIFEST = CHROMA_DIR / "quackquery.json"
 CORPORA = ("synthetic", "unverified", "verified")
 
