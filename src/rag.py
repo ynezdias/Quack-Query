@@ -7,11 +7,12 @@ import time
 
 from dotenv import load_dotenv
 from src.embeddings import embed
-from src.knowledge import CHROMA_DIR, active_collection
+from src.knowledge import CHROMA_DIR, ROOT, active_collection
+from src.runtime import ConfigurationError
 from src.schema import ANSWER_SCHEMA
 from src.retrieval import bm25, fuse, lexical_index
 
-load_dotenv()
+load_dotenv(ROOT / ".env")
 LOGGER = logging.getLogger(__name__)
 UNKNOWN = "I don't know based on the university documents."
 
@@ -127,30 +128,49 @@ def validate_response(payload, chunks):
 def generate_response(question, chunks, history=()):
     if not chunks:
         return {"status": "unknown", "message": UNKNOWN, "claims": []}
-    api_key = os.getenv("GROQ_API_KEY")
-    if not api_key:
-        raise RuntimeError("GROQ_API_KEY is missing")
+    api_key = os.getenv("GROQ_API_KEY", "").strip()
+    if not api_key or api_key == "replace-with-your-key":
+        raise ConfigurationError("GROQ_API_KEY is missing")
     from groq import Groq
     client = Groq(api_key=api_key, timeout=30, max_retries=1)
-    model = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
+    model = os.getenv("GROQ_MODEL", "").strip() or "openai/gpt-oss-20b"
     options = {}
     response_format = {"type": "json_object"}
     if model in ("openai/gpt-oss-20b", "openai/gpt-oss-120b"):
         options["reasoning_effort"] = "low"
         response_format = {"type": "json_schema", "json_schema": {
             "name": "quackquery_answer", "strict": True, "schema": ANSWER_SCHEMA}}
-    response = client.chat.completions.create(
-        model=model, temperature=0,
-        max_tokens=1800, response_format=response_format, **options,
-        messages=[{"role": "system", "content": SYSTEM_PROMPT},
-                  {"role": "user", "content": json.dumps({"question": question,
+    messages = [{"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": json.dumps({"question": question,
                     "history": [{"role": t["role"], "content": t["content"][:1000]} for t in history[-6:]],
-                    "sources": json.loads(build_context(chunks))})}])
+                    "sources": json.loads(build_context(chunks))})}]
     try:
-        return validate_response(json.loads(response.choices[0].message.content), chunks)
-    except (ValueError, TypeError) as exc:
-        LOGGER.warning("Generated response failed citation/schema validation: %s", type(exc).__name__)
+        for attempt in range(2):
+            response = client.chat.completions.create(
+                model=model, temperature=0, max_tokens=1800,
+                response_format=response_format, **options, messages=messages)
+            content = response.choices[0].message.content if response.choices else None
+            try:
+                if not isinstance(content, str):
+                    raise ValueError("Provider returned no answer content")
+                return validate_response(json.loads(content), chunks)
+            except (ValueError, TypeError) as exc:
+                LOGGER.warning("Generated response failed evidence validation (attempt %d): %s", attempt + 1, type(exc).__name__)
+                if attempt == 0:
+                    # Reuse the original sources; never loosen citation validation.
+                    # JSON parse errors may include offsets, not provider secrets.
+                    reason = "Invalid JSON" if isinstance(exc, json.JSONDecodeError) else str(exc)
+                    messages = messages + [{"role": "user", "content":
+                        "The response failed local validation: " + reason + ". "
+                        "Return corrected JSON using the original question and sources. "
+                        "Use short, contiguous evidence quotes copied exactly from a single source. "
+                        "Do not rewrite punctuation, join separate passages, or invent table wording. "
+                        "Only make claims supported by those quotations. If the requested fact is absent, "
+                        "return unknown with no claims."}]
         return {"status": "validation_failed", "message": "I could not verify the answer's citations. Try a more specific question.", "claims": []}
+    finally:
+        client.close()
+
 
 
 def response_text(response):

@@ -10,8 +10,14 @@ Never commit `.env`. `GROQ_MODEL` can override the default model.
 python -m pip install -r requirements.txt
 python -m src.ingest --corpus synthetic
 python -m src.ingest --corpus unverified
-python -m streamlit run app.py
+.\run.ps1
+# Alternatively: python -m src.serve --host 127.0.0.1 --port 8502
 ```
+
+The launcher uses the project virtual environment, loads .env from the project root,
+and checks or rebuilds each exposed document index. Open http://localhost:8502.
+Run it from a normal terminal with internet access: a restricted runner can serve
+the UI while blocking outbound Groq requests.
 
 The first model load downloads weights into `.cache/`. After downloading,
 set `HF_HUB_OFFLINE=1` when you need to run without Hugging Face network access.
@@ -39,8 +45,11 @@ Health: `/_stcore/health` checks the Streamlit server. Startup indexing must
 succeed before the server starts. Health does not check Groq availability.
 
 For public hosting, use a single container with a persistent volume behind
-HTTPS and an ingress rate limit. The in-app six-requests-per-minute limit is
-per browser session and is not an abuse-prevention boundary. Configure provider
+HTTPS and an ingress rate limit. The in-app allowance defaults to 30 completed questions per minute per browser
+session (configure QUACKQUERY_REQUESTS_PER_MINUTE from 1 to 600). Failed provider
+requests and citation-validation failures do not consume this allowance. Provider
+rate limits are separate; the app honors Retry-After and preserves conversation
+history. The session allowance is not an abuse-prevention boundary. Configure provider
 spending limits. The app has no user accounts and must not host private student
 records. Choose a hosting provider and domain separately; this repository does
 not create or publish cloud resources.
@@ -58,7 +67,8 @@ available until explicitly cleaned up. Do not run two ingestion writers at once.
 - Model-not-found: choose an available model in Groq and set `GROQ_MODEL`.
 - Missing API key: set `GROQ_API_KEY` at runtime, never in the Dockerfile.
 - Index not ready: run ingestion for the selected corpus and inspect logs.
-- Verification failure: a generated quote or citation did not pass validation;
+- Verification failure: the app makes one correction attempt with the same
+  retrieved sources. If citations still fail validation, it withholds the claims;
   inspect the source and try a more specific question.
 - Empty scanned PDF: OCR is not implemented; provide a text-based source.
 
@@ -93,3 +103,22 @@ then restart Docker Desktop and retry the Compose command. D: had 32.27 GB free,
 so relocating Docker storage is another option requiring a deliberate migration.
 Do not factory-reset Docker or delete its disk image as a routine fix: that can
 remove existing images and volumes. No reset or storage migration was performed.
+
+## Backend recovery verification (2026-10-02)
+
+The failing local server was running with outbound sockets restricted (WinError
+10013), even though its HTTP health endpoint worked. Restarting it with network
+access restored Groq-backed answers. Failed requests now leave the session
+allowance unchanged; the default allowance is 30 completed questions per minute.
+Provider Retry-After cooldowns and one bounded evidence-correction attempt are
+covered by regression tests. Citation checks still reject unsupported quotations.
+
+All 44 unit/UI/startup tests passed, pip check reported no broken requirements,
+and the running HTTP health endpoint returned 200. Live browser checks confirmed
+answers with citations from synthetic, reviewed-source, and original PDF
+collections, an international-applicant follow-up, refusal of a personal student
+ID question, original-file download controls, and official-source links. A broad
+PDF question initially failed quotation checks and then safely returned unknown
+on correction. These are smoke checks, not a complete answer-quality benchmark.
+Docker packaging now includes presentation.py; the container build remains
+unverified as described above.

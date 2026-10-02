@@ -8,10 +8,10 @@ inspectable evidence, isolated corpora, hybrid retrieval, and measured evaluatio
 - Recursive PDF/DOCX ingestion with document hashes and atomic index publication.
 - Separate synthetic-demo, original/unverified, and reviewed official-source knowledge bases.
 - Shared semantic embeddings plus BM25 search combined with reciprocal-rank fusion.
-- Structured answers, citation-ID validation, and matching evidence quotations.
+- Structured answers, citation-ID validation, matching evidence quotations, and one bounded correction attempt when evidence validation fails.
 - Expandable evidence panels and original-document downloads.
 - Session conversation history, follow-up context, corpus isolation, and clear-history control.
-- Bounded inputs/history, per-session request limits, provider timeouts, and safe error handling.
+- Bounded inputs/history, configurable completed-question limits, provider cooldowns, timeouts, and actionable service errors.
 - The original 32-question benchmark plus a 75-question expanded regression suite, including 20 official-source cases.
 - Docker/Compose deployment configuration, persistent index volume, health check, and CI.
 
@@ -23,8 +23,13 @@ Use Python 3.11 and a virtual environment. Install `requirements.txt`, configure
 ```powershell
 python -m src.ingest --corpus synthetic
 python -m src.ingest --corpus unverified
-python -m streamlit run app.py
+.\run.ps1
 ```
+
+On Windows, `run.ps1` starts the app at http://localhost:8502 using the project
+virtual environment and checks the document indexes first. Run from a terminal
+with internet access so the app can reach Groq. Alternatively use
+`python -m src.serve --host 127.0.0.1 --port 8502`.
 
 The default Groq model is `openai/gpt-oss-20b`; override it with `GROQ_MODEL`.
 The first model load downloads `all-MiniLM-L6-v2` into `.cache/`.
